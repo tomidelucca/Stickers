@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E655B12820683F2600FB2D6D /* Themes.txt in Resources */ = {isa = PBXBuildFile; fileRef = E655B12720683F2600FB2D6D /* Themes.txt */; };
+		E655B12B20684A0B00FB2D6D /* StickerStatisticsBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B12A20684A0B00FB2D6D /* StickerStatisticsBoxView.m */; };
+		E655B131206886DB00FB2D6D /* StickerStatisticView.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B130206886DB00FB2D6D /* StickerStatisticView.m */; };
+		E655B1342068890200FB2D6D /* StickerStatistic.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B1332068890200FB2D6D /* StickerStatistic.m */; };
+		E655B1372068895600FB2D6D /* StickerStatisticViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B1362068895600FB2D6D /* StickerStatisticViewModel.m */; };
+		E655B13A206892BF00FB2D6D /* StickerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B139206892BF00FB2D6D /* StickerProgressView.m */; };
+		E6B85B2920689ECE0099481E /* StickerSectionScrubber.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B85B2820689ECE0099481E /* StickerSectionScrubber.m */; };
+		E6FFC6D22067352400B25631 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6D12067352400B25631 /* AppDelegate.m */; };
+		E6FFC6DA2067352400B25631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6FFC6D92067352400B25631 /* Assets.xcassets */; };
+		E6FFC6DD2067352400B25631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FFC6DB2067352400B25631 /* LaunchScreen.storyboard */; };
+		E6FFC6E02067352400B25631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6DF2067352400B25631 /* main.m */; };
+		E6FFC6E8206735D500B25631 /* StickersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6E7206735D500B25631 /* StickersViewModel.m */; };
+		E6FFC6EB206735E100B25631 /* Sticker.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6EA206735E100B25631 /* Sticker.m */; };
+		E6FFC6F22067363500B25631 /* MainStickersCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6F12067363500B25631 /* MainStickersCollectionViewController.m */; };
+		E6FFC6F720673C4800B25631 /* UserDefaultsStickerDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6F620673C4800B25631 /* UserDefaultsStickerDAO.m */; };
+		E6FFC6FA20673CE200B25631 /* StickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6F920673CE200B25631 /* StickerCollectionViewCell.m */; };
+		E6FFC6FD2067454E00B25631 /* StickersLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6FC2067454E00B25631 /* StickersLayout.m */; };
+		F506671963B2F7CD041A2F90 /* libPods-Stickers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8BB87D3DC1C7E2D6B9741A /* libPods-Stickers.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B8BB87D3DC1C7E2D6B9741A /* libPods-Stickers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stickers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB46962161D76AA79DA6C7D /* Pods-Stickers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stickers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stickers/Pods-Stickers.release.xcconfig"; sourceTree = "<group>"; };
+		E655B12720683F2600FB2D6D /* Themes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Themes.txt; sourceTree = "<group>"; };
+		E655B12920684A0B00FB2D6D /* StickerStatisticsBoxView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerStatisticsBoxView.h; sourceTree = "<group>"; };
+		E655B12A20684A0B00FB2D6D /* StickerStatisticsBoxView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickerStatisticsBoxView.m; sourceTree = "<group>"; };
+		E655B12F206886DB00FB2D6D /* StickerStatisticView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerStatisticView.h; sourceTree = "<group>"; };
+		E655B130206886DB00FB2D6D /* StickerStatisticView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickerStatisticView.m; sourceTree = "<group>"; };
+		E655B1322068890200FB2D6D /* StickerStatistic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerStatistic.h; sourceTree = "<group>"; };
+		E655B1332068890200FB2D6D /* StickerStatistic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickerStatistic.m; sourceTree = "<group>"; };
+		E655B1352068895600FB2D6D /* StickerStatisticViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerStatisticViewModel.h; sourceTree = "<group>"; };
+		E655B1362068895600FB2D6D /* StickerStatisticViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickerStatisticViewModel.m; sourceTree = "<group>"; };
+		E655B138206892BF00FB2D6D /* StickerProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerProgressView.h; sourceTree = "<group>"; };
+		E655B139206892BF00FB2D6D /* StickerProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickerProgressView.m; sourceTree = "<group>"; };
+		E6B85B2720689ECE0099481E /* StickerSectionScrubber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerSectionScrubber.h; sourceTree = "<group>"; };
+		E6B85B2820689ECE0099481E /* StickerSectionScrubber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickerSectionScrubber.m; sourceTree = "<group>"; };
+		E6FFC6CD2067352400B25631 /* Stickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6FFC6D02067352400B25631 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E6FFC6D12067352400B25631 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E6FFC6D92067352400B25631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6FFC6DC2067352400B25631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6FFC6DE2067352400B25631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6FFC6DF2067352400B25631 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6FFC6E6206735D500B25631 /* StickersViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickersViewModel.h; sourceTree = "<group>"; };
+		E6FFC6E7206735D500B25631 /* StickersViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickersViewModel.m; sourceTree = "<group>"; };
+		E6FFC6E9206735E100B25631 /* Sticker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sticker.h; sourceTree = "<group>"; };
+		E6FFC6EA206735E100B25631 /* Sticker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sticker.m; sourceTree = "<group>"; };
+		E6FFC6F02067363500B25631 /* MainStickersCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainStickersCollectionViewController.h; sourceTree = "<group>"; };
+		E6FFC6F12067363500B25631 /* MainStickersCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainStickersCollectionViewController.m; sourceTree = "<group>"; };
+		E6FFC6F4206737EB00B25631 /* StickerDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerDAO.h; sourceTree = "<group>"; };
+		E6FFC6F520673C4800B25631 /* UserDefaultsStickerDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaultsStickerDAO.h; sourceTree = "<group>"; };
+		E6FFC6F620673C4800B25631 /* UserDefaultsStickerDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsStickerDAO.m; sourceTree = "<group>"; };
+		E6FFC6F820673CE200B25631 /* StickerCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerCollectionViewCell.h; sourceTree = "<group>"; };
+		E6FFC6F920673CE200B25631 /* StickerCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickerCollectionViewCell.m; sourceTree = "<group>"; };
+		E6FFC6FB2067454E00B25631 /* StickersLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickersLayout.h; sourceTree = "<group>"; };
+		E6FFC6FC2067454E00B25631 /* StickersLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickersLayout.m; sourceTree = "<group>"; };
+		E92B53A1907E00698F678D01 /* Pods-Stickers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stickers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stickers/Pods-Stickers.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6FFC6CA2067352400B25631 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F506671963B2F7CD041A2F90 /* libPods-Stickers.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5FB96AD9592C4D37DC42409 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E92B53A1907E00698F678D01 /* Pods-Stickers.debug.xcconfig */,
+				ADB46962161D76AA79DA6C7D /* Pods-Stickers.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B91750D4BA9A6B1C5D0EC87E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B8BB87D3DC1C7E2D6B9741A /* libPods-Stickers.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E655B12620683F0700FB2D6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E655B12720683F2600FB2D6D /* Themes.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E6FFC6C42067352400B25631 = {
+			isa = PBXGroup;
+			children = (
+				E6FFC6CF2067352400B25631 /* Stickers */,
+				E6FFC6CE2067352400B25631 /* Products */,
+				B5FB96AD9592C4D37DC42409 /* Pods */,
+				B91750D4BA9A6B1C5D0EC87E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E6FFC6CE2067352400B25631 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6FFC6CD2067352400B25631 /* Stickers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6FFC6CF2067352400B25631 /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				E655B12620683F0700FB2D6D /* Resources */,
+				E6FFC6F3206737DB00B25631 /* Protocols */,
+				E6FFC6EF2067360D00B25631 /* Views */,
+				E6FFC6EE2067360900B25631 /* Controllers */,
+				E6FFC6ED2067360400B25631 /* Models */,
+				E6FFC6EC206735FA00B25631 /* View Models */,
+				E6FFC6D02067352400B25631 /* AppDelegate.h */,
+				E6FFC6D12067352400B25631 /* AppDelegate.m */,
+				E6FFC6D92067352400B25631 /* Assets.xcassets */,
+				E6FFC6DB2067352400B25631 /* LaunchScreen.storyboard */,
+				E6FFC6DE2067352400B25631 /* Info.plist */,
+				E6FFC6DF2067352400B25631 /* main.m */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
+		E6FFC6EC206735FA00B25631 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6FFC6E6206735D500B25631 /* StickersViewModel.h */,
+				E6FFC6E7206735D500B25631 /* StickersViewModel.m */,
+				E655B1352068895600FB2D6D /* StickerStatisticViewModel.h */,
+				E655B1362068895600FB2D6D /* StickerStatisticViewModel.m */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		E6FFC6ED2067360400B25631 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6FFC6E9206735E100B25631 /* Sticker.h */,
+				E6FFC6EA206735E100B25631 /* Sticker.m */,
+				E6FFC6F520673C4800B25631 /* UserDefaultsStickerDAO.h */,
+				E6FFC6F620673C4800B25631 /* UserDefaultsStickerDAO.m */,
+				E6FFC6FB2067454E00B25631 /* StickersLayout.h */,
+				E6FFC6FC2067454E00B25631 /* StickersLayout.m */,
+				E655B1322068890200FB2D6D /* StickerStatistic.h */,
+				E655B1332068890200FB2D6D /* StickerStatistic.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6FFC6EE2067360900B25631 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6FFC6F02067363500B25631 /* MainStickersCollectionViewController.h */,
+				E6FFC6F12067363500B25631 /* MainStickersCollectionViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E6FFC6EF2067360D00B25631 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6FFC6F820673CE200B25631 /* StickerCollectionViewCell.h */,
+				E6FFC6F920673CE200B25631 /* StickerCollectionViewCell.m */,
+				E655B12920684A0B00FB2D6D /* StickerStatisticsBoxView.h */,
+				E655B12A20684A0B00FB2D6D /* StickerStatisticsBoxView.m */,
+				E655B12F206886DB00FB2D6D /* StickerStatisticView.h */,
+				E655B130206886DB00FB2D6D /* StickerStatisticView.m */,
+				E655B138206892BF00FB2D6D /* StickerProgressView.h */,
+				E655B139206892BF00FB2D6D /* StickerProgressView.m */,
+				E6B85B2720689ECE0099481E /* StickerSectionScrubber.h */,
+				E6B85B2820689ECE0099481E /* StickerSectionScrubber.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6FFC6F3206737DB00B25631 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E6FFC6F4206737EB00B25631 /* StickerDAO.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6FFC6CC2067352400B25631 /* Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6FFC6E32067352400B25631 /* Build configuration list for PBXNativeTarget "Stickers" */;
+			buildPhases = (
+				82556116F30ABD3ADC0C3F31 /* [CP] Check Pods Manifest.lock */,
+				E6FFC6C92067352400B25631 /* Sources */,
+				E6FFC6CA2067352400B25631 /* Frameworks */,
+				E6FFC6CB2067352400B25631 /* Resources */,
+				B3B6550A5F8CB713DD3090DC /* [CP] Embed Pods Frameworks */,
+				B8412DB853E7CCE1EF319527 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stickers;
+			productName = Stickers;
+			productReference = E6FFC6CD2067352400B25631 /* Stickers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6FFC6C52067352400B25631 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Tomi De Lucca";
+				TargetAttributes = {
+					E6FFC6CC2067352400B25631 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E6FFC6C82067352400B25631 /* Build configuration list for PBXProject "Stickers" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6FFC6C42067352400B25631;
+			productRefGroup = E6FFC6CE2067352400B25631 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6FFC6CC2067352400B25631 /* Stickers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6FFC6CB2067352400B25631 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6FFC6DD2067352400B25631 /* LaunchScreen.storyboard in Resources */,
+				E655B12820683F2600FB2D6D /* Themes.txt in Resources */,
+				E6FFC6DA2067352400B25631 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82556116F30ABD3ADC0C3F31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stickers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3B6550A5F8CB713DD3090DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stickers/Pods-Stickers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8412DB853E7CCE1EF319527 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Stickers/Pods-Stickers-resources.sh",
+				"${PODS_ROOT}/DKNightVersion/DKNightVersion/ColorTable/DKColorTable.txt",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DKColorTable.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stickers/Pods-Stickers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6FFC6C92067352400B25631 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6FFC6EB206735E100B25631 /* Sticker.m in Sources */,
+				E6B85B2920689ECE0099481E /* StickerSectionScrubber.m in Sources */,
+				E6FFC6FD2067454E00B25631 /* StickersLayout.m in Sources */,
+				E655B13A206892BF00FB2D6D /* StickerProgressView.m in Sources */,
+				E6FFC6FA20673CE200B25631 /* StickerCollectionViewCell.m in Sources */,
+				E6FFC6F720673C4800B25631 /* UserDefaultsStickerDAO.m in Sources */,
+				E655B131206886DB00FB2D6D /* StickerStatisticView.m in Sources */,
+				E6FFC6E02067352400B25631 /* main.m in Sources */,
+				E655B1372068895600FB2D6D /* StickerStatisticViewModel.m in Sources */,
+				E655B1342068890200FB2D6D /* StickerStatistic.m in Sources */,
+				E6FFC6F22067363500B25631 /* MainStickersCollectionViewController.m in Sources */,
+				E655B12B20684A0B00FB2D6D /* StickerStatisticsBoxView.m in Sources */,
+				E6FFC6E8206735D500B25631 /* StickersViewModel.m in Sources */,
+				E6FFC6D22067352400B25631 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E6FFC6DB2067352400B25631 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6FFC6DC2067352400B25631 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6FFC6E12067352400B25631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E6FFC6E22067352400B25631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6FFC6E42067352400B25631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92B53A1907E00698F678D01 /* Pods-Stickers.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8432PM589;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cool.tomi.Stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6FFC6E52067352400B25631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB46962161D76AA79DA6C7D /* Pods-Stickers.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8432PM589;
+				INFOPLIST_FILE = Stickers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cool.tomi.Stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6FFC6C82067352400B25631 /* Build configuration list for PBXProject "Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6FFC6E12067352400B25631 /* Debug */,
+				E6FFC6E22067352400B25631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6FFC6E32067352400B25631 /* Build configuration list for PBXNativeTarget "Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6FFC6E42067352400B25631 /* Debug */,
+				E6FFC6E52067352400B25631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6FFC6C52067352400B25631 /* Project object */;
+}
