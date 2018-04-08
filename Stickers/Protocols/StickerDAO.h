@@ -17,6 +17,7 @@
 - (NSUInteger)numberOfDuplicatedStickers;
 - (void)saveSticker:(Sticker*)sticker;
 - (NSArray<Sticker*>*)getDuplicateStickers;
+- (NSArray<Sticker*>*)getMissingStickers;
 - (Sticker*)stickerWithNumber:(NSUInteger)number;
 @end
 

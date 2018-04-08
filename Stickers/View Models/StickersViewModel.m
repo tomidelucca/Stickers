@@ -90,4 +90,21 @@
     return [duplicated substringWithRange:NSMakeRange(0, duplicated.length - 2)];
 }
 
+- (NSString*)missingStickers
+{
+    NSMutableString *missing = [[NSMutableString alloc] init];
+    
+    NSArray *mis = [self.dao getMissingStickers];
+    
+    if (mis.count == 0) {
+        return @"";
+    }
+    
+    for (Sticker * sticker in mis) {
+        [missing appendFormat:@"%ld, ", sticker.number];
+    }
+    
+    return [missing substringWithRange:NSMakeRange(0, missing.length - 2)];
+}
+
 @end

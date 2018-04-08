@@ -24,5 +24,6 @@
 - (NSUInteger)numberOfStickersInSection:(NSUInteger)section;
 - (Sticker *)stickerForSection:(NSUInteger)section andRow:(NSUInteger)row;
 - (NSString *)duplicatedStickers;
+- (NSString*)missingStickers;
 
 @end

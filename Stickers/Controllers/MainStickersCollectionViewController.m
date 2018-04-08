@@ -232,8 +232,13 @@ static NSString * const cellReuseIdentifier = @"StickerCell";
         [[UIPasteboard generalPasteboard] setString:[weakSelf.viewModel duplicatedStickers]];
     }];
     
+    UIAlertAction *missing = [UIAlertAction actionWithTitle:@"Faltan" style:UIAlertActionStyleDefault handler:^(UIAlertAction* action) {
+        [[UIPasteboard generalPasteboard] setString:[weakSelf.viewModel missingStickers]];
+    }];
+    
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancelar" style:UIAlertActionStyleCancel handler:nil];
     
+    [alert addAction:missing];
     [alert addAction:duplicated];
     [alert addAction:cancel];
     

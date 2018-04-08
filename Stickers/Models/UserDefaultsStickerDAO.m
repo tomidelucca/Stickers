@@ -92,6 +92,19 @@ static NSInteger kStickerMax = 669;
     return [duplicate copy];
 }
 
+- (NSArray<Sticker*>*)getMissingStickers
+{
+    NSMutableArray *missing = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *sticker in self.cache) {
+        if ([[sticker objectForKey:kStickerAmount] unsignedIntegerValue] == 0) {
+            [missing addObject:[self dictionaryToSticker:sticker]];
+        }
+    }
+    
+    return [missing copy];
+}
+
 - (void)saveSticker:(Sticker *)sticker {
     NSMutableDictionary *copy = [[self.cache objectAtIndex:sticker.number] mutableCopy];
     [copy setObject:@(sticker.amount) forKey:kStickerAmount];
