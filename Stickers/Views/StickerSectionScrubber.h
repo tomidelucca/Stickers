@@ -1,9 +1,9 @@
 //
-//  StickerSectionScrubber.h
-//  Stickers
+// StickerSectionScrubber.h
+// Stickers
 //
-//  Created by Tomi De Lucca on 3/26/18.
-//  Copyright © 2018 Tomi De Lucca. All rights reserved.
+// Created by Tomi De Lucca on 3/26/18.
+// Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -13,6 +13,6 @@
 @end
 
 @interface StickerSectionScrubber : UIView
-@property (weak, nonatomic) id<StickerSectionScrubberDelegate> delegate;
+@property (weak, nonatomic) id <StickerSectionScrubberDelegate> delegate;
 - (instancetype)initWithNumberOfSections:(NSUInteger)sections;
 @end

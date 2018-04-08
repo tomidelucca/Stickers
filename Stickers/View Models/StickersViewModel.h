@@ -1,9 +1,9 @@
 //
-//  StickersViewModel.h
-//  Stickers
+// StickersViewModel.h
+// Stickers
 //
-//  Created by Tomi De Lucca on 3/24/18.
-//  Copyright © 2018 Tomi De Lucca. All rights reserved.
+// Created by Tomi De Lucca on 3/24/18.
+// Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -14,16 +14,16 @@
 
 @interface StickersViewModel : NSObject
 
-- (instancetype)initWithStickerDAO:(id<StickerDAO>)dao;
+- (instancetype)initWithStickerDAO:(id <StickerDAO> )dao;
 
 - (NSUInteger)numberOfSections;
-- (StickerCellStatus)cellStatusForSticker:(Sticker*)sticker;
-- (void)incrementAmountForSticker:(Sticker*)sticker;
-- (void)decrementAmountForSticker:(Sticker*)sticker;
+- (StickerCellStatus)cellStatusForSticker:(Sticker *)sticker;
+- (void)incrementAmountForSticker:(Sticker *)sticker;
+- (void)decrementAmountForSticker:(Sticker *)sticker;
 - (NSString *)titleForSection:(NSUInteger)section;
 - (NSUInteger)numberOfStickersInSection:(NSUInteger)section;
 - (Sticker *)stickerForSection:(NSUInteger)section andRow:(NSUInteger)row;
 - (NSString *)duplicatedStickers;
-- (NSString*)missingStickers;
+- (NSString *)missingStickers;
 
 @end

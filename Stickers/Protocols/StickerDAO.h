@@ -1,9 +1,9 @@
 //
-//  StickerDAO.h
-//  Stickers
+// StickerDAO.h
+// Stickers
 //
-//  Created by Tomi De Lucca on 3/24/18.
-//  Copyright © 2018 Tomi De Lucca. All rights reserved.
+// Created by Tomi De Lucca on 3/24/18.
+// Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
 #ifndef StickerDAO_h
@@ -15,10 +15,10 @@
 - (NSUInteger)numberOfStickers;
 - (NSUInteger)numberOfOwnedStickers;
 - (NSUInteger)numberOfDuplicatedStickers;
-- (void)saveSticker:(Sticker*)sticker;
-- (NSArray<Sticker*>*)getDuplicateStickers;
-- (NSArray<Sticker*>*)getMissingStickers;
-- (Sticker*)stickerWithNumber:(NSUInteger)number;
+- (void)saveSticker:(Sticker *)sticker;
+- (NSArray <Sticker *> *)getDuplicateStickers;
+- (NSArray <Sticker *> *)getMissingStickers;
+- (Sticker *)stickerWithNumber:(NSUInteger)number;
 @end
 
 #endif
