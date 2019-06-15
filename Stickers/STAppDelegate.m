@@ -8,7 +8,7 @@
 
 #import "STAppDelegate.h"
 
-#import "MainStickersCollectionViewController.h"
+#import "STMainStickersCollectionViewController.h"
 
 #import <DKNightVersion/DKNightVersion.h>
 
@@ -20,7 +20,7 @@ static NSString *const kThemeFile = @"Themes.txt";
 {
 	[self setupTheme];
 
-	UIViewController *root = [MainStickersCollectionViewController new];
+	UIViewController *root = [STMainStickersCollectionViewController new];
 	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:root];
 	self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 	[self.window setRootViewController:nav];

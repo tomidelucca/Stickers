@@ -19,7 +19,7 @@
 		E6FFC6E02067352400B25631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6DF2067352400B25631 /* main.m */; };
 		E6FFC6E8206735D500B25631 /* STStickersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6E7206735D500B25631 /* STStickersViewModel.m */; };
 		E6FFC6EB206735E100B25631 /* STSticker.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6EA206735E100B25631 /* STSticker.m */; };
-		E6FFC6F22067363500B25631 /* MainStickersCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6F12067363500B25631 /* MainStickersCollectionViewController.m */; };
+		E6FFC6F22067363500B25631 /* STMainStickersCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6F12067363500B25631 /* STMainStickersCollectionViewController.m */; };
 		E6FFC6F720673C4800B25631 /* STUserDefaultsStickerDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6F620673C4800B25631 /* STUserDefaultsStickerDAO.m */; };
 		E6FFC6FA20673CE200B25631 /* StickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6F920673CE200B25631 /* StickerCollectionViewCell.m */; };
 		E6FFC6FD2067454E00B25631 /* STStickersLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6FC2067454E00B25631 /* STStickersLayout.m */; };
@@ -52,8 +52,8 @@
 		E6FFC6E7206735D500B25631 /* STStickersViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STStickersViewModel.m; sourceTree = "<group>"; };
 		E6FFC6E9206735E100B25631 /* STSticker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STSticker.h; sourceTree = "<group>"; };
 		E6FFC6EA206735E100B25631 /* STSticker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STSticker.m; sourceTree = "<group>"; };
-		E6FFC6F02067363500B25631 /* MainStickersCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainStickersCollectionViewController.h; sourceTree = "<group>"; };
-		E6FFC6F12067363500B25631 /* MainStickersCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainStickersCollectionViewController.m; sourceTree = "<group>"; };
+		E6FFC6F02067363500B25631 /* STMainStickersCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STMainStickersCollectionViewController.h; sourceTree = "<group>"; };
+		E6FFC6F12067363500B25631 /* STMainStickersCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STMainStickersCollectionViewController.m; sourceTree = "<group>"; };
 		E6FFC6F4206737EB00B25631 /* StickerDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerDAO.h; sourceTree = "<group>"; };
 		E6FFC6F520673C4800B25631 /* STUserDefaultsStickerDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STUserDefaultsStickerDAO.h; sourceTree = "<group>"; };
 		E6FFC6F620673C4800B25631 /* STUserDefaultsStickerDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STUserDefaultsStickerDAO.m; sourceTree = "<group>"; };
@@ -166,8 +166,8 @@
 		E6FFC6EE2067360900B25631 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E6FFC6F02067363500B25631 /* MainStickersCollectionViewController.h */,
-				E6FFC6F12067363500B25631 /* MainStickersCollectionViewController.m */,
+				E6FFC6F02067363500B25631 /* STMainStickersCollectionViewController.h */,
+				E6FFC6F12067363500B25631 /* STMainStickersCollectionViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 				E6FFC6E02067352400B25631 /* main.m in Sources */,
 				E655B1372068895600FB2D6D /* STStickerStatisticViewModel.m in Sources */,
 				E655B1342068890200FB2D6D /* STStickerStatistic.m in Sources */,
-				E6FFC6F22067363500B25631 /* MainStickersCollectionViewController.m in Sources */,
+				E6FFC6F22067363500B25631 /* STMainStickersCollectionViewController.m in Sources */,
 				E655B12B20684A0B00FB2D6D /* StickerStatisticsBoxView.m in Sources */,
 				E6FFC6E8206735D500B25631 /* STStickersViewModel.m in Sources */,
 				E6FFC6D22067352400B25631 /* STAppDelegate.m in Sources */,

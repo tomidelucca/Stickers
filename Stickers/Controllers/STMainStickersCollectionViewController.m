@@ -1,12 +1,12 @@
 //
-// MainStickersCollectionViewController.m
+// STMainStickersCollectionViewController.m
 // Stickers
 //
 // Created by Tomi De Lucca on 3/24/18.
 // Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
-#import "MainStickersCollectionViewController.h"
+#import "STMainStickersCollectionViewController.h"
 
 #import "StickerCollectionViewCell.h"
 #import "STStickerStatisticViewModel.h"
@@ -20,7 +20,7 @@
 #import <PureLayout/PureLayout.h>
 #import <DKNightVersion/DKNightVersion.h>
 
-@interface MainStickersCollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource, StickerSectionScrubberDelegate>
+@interface STMainStickersCollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource, StickerSectionScrubberDelegate>
 @property (strong, nonatomic) STStickersViewModel *viewModel;
 @property (strong, nonatomic) STStickerStatisticViewModel *statisticViewModel;
 @property (strong, nonatomic) StickerStatisticsBoxView *statisticsBoxView;
@@ -30,7 +30,7 @@
 @property (strong, nonatomic) UICollectionView *collectionView;
 @end
 
-@implementation MainStickersCollectionViewController
+@implementation STMainStickersCollectionViewController
 
 static NSString *const cellReuseIdentifier = @"StickerCell";
 
