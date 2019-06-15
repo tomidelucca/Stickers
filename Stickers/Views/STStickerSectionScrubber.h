@@ -1,5 +1,5 @@
 //
-// StickerSectionScrubber.h
+// STStickerSectionScrubber.h
 // Stickers
 //
 // Created by Tomi De Lucca on 3/26/18.
@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol StickerSectionScrubberDelegate <NSObject>
+@protocol STStickerSectionScrubberDelegate <NSObject>
 - (void)didScrubToSection:(NSUInteger)section;
 @end
 
-@interface StickerSectionScrubber : UIView
-@property (weak, nonatomic) id <StickerSectionScrubberDelegate> delegate;
+@interface STStickerSectionScrubber : UIView
+@property (weak, nonatomic) id <STStickerSectionScrubberDelegate> delegate;
 - (instancetype)initWithNumberOfSections:(NSUInteger)sections;
 @end

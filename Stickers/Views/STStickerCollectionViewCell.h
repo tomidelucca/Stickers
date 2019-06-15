@@ -1,5 +1,5 @@
 //
-// StickerCollectionViewCell.h
+// STStickerCollectionViewCell.h
 // Stickers
 //
 // Created by Tomi De Lucca on 3/24/18.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 typedef enum {
-	StickerCellStatusDoesntOwnSticker,
-	StickerCellStatusOwnsSticker
-} StickerCellStatus;
+	STStickerCellStatusDoesntOwnSticker,
+	STStickerCellStatusOwnsSticker
+} STStickerCellStatus;
 
-@interface StickerCollectionViewCell : UICollectionViewCell
+@interface STStickerCollectionViewCell : UICollectionViewCell
 - (void)updateWithTitle:(NSString *)title andSubtitle:(NSString *)subtitle;
-- (void)setStatus:(StickerCellStatus)status;
+- (void)setStatus:(STStickerCellStatus)status;
 @end

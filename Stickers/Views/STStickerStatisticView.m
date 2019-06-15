@@ -1,22 +1,22 @@
 //
-// StickerStatView.m
+// STStickerStatisticView.m
 // Stickers
 //
 // Created by Tomi De Lucca on 3/25/18.
 // Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
-#import "StickerStatisticView.h"
+#import "STStickerStatisticView.h"
 
 #import <DKNightVersion/DKNightVersion.h>
 #import <PureLayout/PureLayout.h>
 
-@interface StickerStatisticView ()
+@interface STStickerStatisticView ()
 @property (strong, nonatomic) UILabel *title;
 @property (strong, nonatomic) UILabel *value;
 @end
 
-@implementation StickerStatisticView
+@implementation STStickerStatisticView
 
 - (instancetype)initWithTitle:(NSString *)title
 {

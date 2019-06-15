@@ -8,24 +8,24 @@
 
 #import "STMainStickersCollectionViewController.h"
 
-#import "StickerCollectionViewCell.h"
+#import "STStickerCollectionViewCell.h"
 #import "STStickerStatisticViewModel.h"
-#import "StickerStatisticsBoxView.h"
+#import "STStickerStatisticsBoxView.h"
 #import "STUserDefaultsStickerDAO.h"
-#import "StickerSectionScrubber.h"
-#import "StickerProgressView.h"
+#import "STStickerSectionScrubber.h"
+#import "STStickerProgressView.h"
 #import "STStickersViewModel.h"
 #import "STStickersLayout.h"
 
 #import <PureLayout/PureLayout.h>
 #import <DKNightVersion/DKNightVersion.h>
 
-@interface STMainStickersCollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource, StickerSectionScrubberDelegate>
+@interface STMainStickersCollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource, STStickerSectionScrubberDelegate>
 @property (strong, nonatomic) STStickersViewModel *viewModel;
 @property (strong, nonatomic) STStickerStatisticViewModel *statisticViewModel;
-@property (strong, nonatomic) StickerStatisticsBoxView *statisticsBoxView;
-@property (strong, nonatomic) StickerProgressView *stickerProgressView;
-@property (strong, nonatomic) StickerSectionScrubber *sectionScrubber;
+@property (strong, nonatomic) STStickerStatisticsBoxView *statisticsBoxView;
+@property (strong, nonatomic) STStickerProgressView *stickerProgressView;
+@property (strong, nonatomic) STStickerSectionScrubber *sectionScrubber;
 @property (strong, nonatomic) UIView *separator;
 @property (strong, nonatomic) UICollectionView *collectionView;
 @end
@@ -67,7 +67,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 
 - (void)configureStatisticsView
 {
-	self.statisticsBoxView = [[StickerStatisticsBoxView alloc] initWithStatistics:[self.statisticViewModel currentStatistics]];
+	self.statisticsBoxView = [[STStickerStatisticsBoxView alloc] initWithStatistics:[self.statisticViewModel currentStatistics]];
 
 	[self.view addSubview:self.statisticsBoxView];
 	[self.statisticsBoxView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeBottom];
@@ -75,7 +75,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 
 - (void)configureStickerProgressView
 {
-	self.stickerProgressView = [StickerProgressView newAutoLayoutView];
+	self.stickerProgressView = [STStickerProgressView newAutoLayoutView];
 	[self.stickerProgressView updateWithProgress:[self.statisticViewModel totalProgress]];
 
 	[self.view addSubview:self.stickerProgressView];
@@ -110,7 +110,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 	[self.collectionView autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.separator];
 
 	[self.collectionView dk_setBackgroundColorPicker:DKColorPickerWithKey(BG)];
-	[self.collectionView registerClass:[StickerCollectionViewCell class] forCellWithReuseIdentifier:cellReuseIdentifier];
+	[self.collectionView registerClass:[STStickerCollectionViewCell class] forCellWithReuseIdentifier:cellReuseIdentifier];
 
 	UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressed:)];
 	[longPressGesture setDelaysTouchesBegan:YES];
@@ -119,7 +119,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 
 - (void)configureScrubberView
 {
-	self.sectionScrubber = [[StickerSectionScrubber alloc] initWithNumberOfSections:self.viewModel.numberOfSections];
+	self.sectionScrubber = [[STStickerSectionScrubber alloc] initWithNumberOfSections:self.viewModel.numberOfSections];
 	self.sectionScrubber.delegate = self;
 	[self.view addSubview:self.sectionScrubber];
 
@@ -157,7 +157,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-	StickerCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellReuseIdentifier forIndexPath:indexPath];
+	STStickerCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellReuseIdentifier forIndexPath:indexPath];
 
 	STSticker *sticker = [self.viewModel stickerForSection:indexPath.section andRow:indexPath.row];
 
@@ -192,7 +192,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 	}
 }
 
-#pragma mark - StickerScrubberDelegate
+#pragma mark - STStickerScrubberDelegate
 
 - (void)didScrubToSection:(NSUInteger)section
 {

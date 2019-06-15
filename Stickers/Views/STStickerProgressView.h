@@ -1,5 +1,5 @@
 //
-// StickerProgressView.h
+// STStickerProgressView.h
 // Stickers
 //
 // Created by Tomi De Lucca on 3/25/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StickerProgressView : UIView
+@interface STStickerProgressView : UIView
 - (void)updateWithProgress:(NSDecimalNumber *)progress;
 @end

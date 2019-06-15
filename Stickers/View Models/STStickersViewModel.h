@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "StickerCollectionViewCell.h"
+#import "STStickerCollectionViewCell.h"
 #import "StickerDAO.h"
 #import "STSticker.h"
 
@@ -17,7 +17,7 @@
 - (instancetype)initWithStickerDAO:(id <StickerDAO> )dao;
 
 - (NSUInteger)numberOfSections;
-- (StickerCellStatus)cellStatusForSticker:(STSticker *)sticker;
+- (STStickerCellStatus)cellStatusForSticker:(STSticker *)sticker;
 - (void)incrementAmountForSticker:(STSticker *)sticker;
 - (void)decrementAmountForSticker:(STSticker *)sticker;
 - (NSString *)titleForSection:(NSUInteger)section;

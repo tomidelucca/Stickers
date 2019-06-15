@@ -1,22 +1,22 @@
 //
-// StickerProgressView.m
+// STStickerProgressView.m
 // Stickers
 //
 // Created by Tomi De Lucca on 3/25/18.
 // Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
-#import "StickerProgressView.h"
+#import "STStickerProgressView.h"
 
 #import <DKNightVersion/DKNightVersion.h>
 #import <PureLayout/PureLayout.h>
 
-@interface StickerProgressView ()
+@interface STStickerProgressView ()
 @property (strong, nonatomic) UILabel *percentage;
 @property (strong, nonatomic) UIProgressView *progressBar;
 @end
 
-@implementation StickerProgressView
+@implementation STStickerProgressView
 
 - (instancetype)init
 {

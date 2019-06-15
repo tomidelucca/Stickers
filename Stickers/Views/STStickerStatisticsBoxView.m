@@ -1,23 +1,23 @@
 //
-// StickerStatsView.m
+// STStickerStatisticsBoxView.m
 // Stickers
 //
 // Created by Tomi De Lucca on 3/25/18.
 // Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
-#import "StickerStatisticsBoxView.h"
+#import "STStickerStatisticsBoxView.h"
 
-#import "StickerStatisticView.h"
+#import "STStickerStatisticView.h"
 
 #import <DKNightVersion/DKNightVersion.h>
 #import <PureLayout/PureLayout.h>
 
-@interface StickerStatisticsBoxView ()
+@interface STStickerStatisticsBoxView ()
 @property (strong, nonatomic) NSDictionary *statistics;
 @end
 
-@implementation StickerStatisticsBoxView
+@implementation STStickerStatisticsBoxView
 
 - (instancetype)initWithStatistics:(NSArray <STStickerStatistic *> *)statistics
 {
@@ -41,7 +41,7 @@
 	[containerView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(20.0f, 10.0f, 20.0f, 10.0f)];
 
 	for (STStickerStatistic *stat in statistics) {
-		StickerStatisticView *sv = [[StickerStatisticView alloc] initWithTitle:stat.title];
+		STStickerStatisticView *sv = [[STStickerStatisticView alloc] initWithTitle:stat.title];
 		[sv updateWithValue:stat.value];
 		[containerView addSubview:sv];
 		[statsViews addObject:sv];
@@ -61,7 +61,7 @@
 - (void)updateWithStatistics:(NSArray <STStickerStatistic *> *)statistics
 {
 	for (STStickerStatistic *stat in statistics) {
-		StickerStatisticView *sv = [self.statistics objectForKey:stat.title];
+		STStickerStatisticView *sv = [self.statistics objectForKey:stat.title];
 		[sv updateWithValue:stat.value];
 	}
 }

@@ -1,5 +1,5 @@
 //
-// StickerStatsView.h
+// STStickerStatisticsBoxView.h
 // Stickers
 //
 // Created by Tomi De Lucca on 3/25/18.
@@ -10,7 +10,7 @@
 
 #import "STStickerStatistic.h"
 
-@interface StickerStatisticsBoxView : UIView
+@interface STStickerStatisticsBoxView : UIView
 - (instancetype)initWithStatistics:(NSArray <STStickerStatistic *> *)statistics;
 - (void)updateWithStatistics:(NSArray <STStickerStatistic *> *)statistics;
 @end

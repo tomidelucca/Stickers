@@ -1,5 +1,5 @@
 //
-// StickerStatView.h
+// STStickerStatisticView.h
 // Stickers
 //
 // Created by Tomi De Lucca on 3/25/18.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StickerStatisticView : UIView
+@interface STStickerStatisticView : UIView
 - (instancetype)initWithTitle:(NSString *)title;
 
 - (void)updateWithValue:(NSString *)value;

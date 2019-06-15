@@ -1,22 +1,22 @@
 //
-// StickerCollectionViewCell.m
+// STStickerCollectionViewCell.m
 // Stickers
 //
 // Created by Tomi De Lucca on 3/24/18.
 // Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
-#import "StickerCollectionViewCell.h"
+#import "STStickerCollectionViewCell.h"
 
 #import <DKNightVersion/DKNightVersion.h>
 #import <PureLayout/PureLayout.h>
 
-@interface StickerCollectionViewCell ()
+@interface STStickerCollectionViewCell ()
 @property (strong, nonatomic) UILabel *title;
 @property (strong, nonatomic) UILabel *subtitle;
 @end
 
-@implementation StickerCollectionViewCell
+@implementation STStickerCollectionViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -54,15 +54,15 @@
 	[self.subtitle setText:subtitle];
 }
 
-- (void)setStatus:(StickerCellStatus)status
+- (void)setStatus:(STStickerCellStatus)status
 {
 	switch (status) {
-		case StickerCellStatusDoesntOwnSticker: {
+		case STStickerCellStatusDoesntOwnSticker: {
 			[self setUnownedStatus];
 		}
 		break;
 
-		case StickerCellStatusOwnsSticker: {
+		case STStickerCellStatusOwnsSticker: {
 			[self setOwnedStatus];
 		}
 		break;

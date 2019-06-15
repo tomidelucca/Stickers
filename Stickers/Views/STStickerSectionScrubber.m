@@ -1,21 +1,21 @@
 //
-// StickerSectionScrubber.m
+// STStickerSectionScrubber.m
 // Stickers
 //
 // Created by Tomi De Lucca on 3/26/18.
 // Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
-#import "StickerSectionScrubber.h"
+#import "STStickerSectionScrubber.h"
 
 #import <DKNightVersion/DKNightVersion.h>
 #import <PureLayout/PureLayout.h>
 
-@interface StickerSectionScrubber ()
+@interface STStickerSectionScrubber ()
 @property (strong, nonatomic) NSDictionary *scrubber;
 @end
 
-@implementation StickerSectionScrubber
+@implementation STStickerSectionScrubber
 
 - (instancetype)initWithNumberOfSections:(NSUInteger)sections
 {

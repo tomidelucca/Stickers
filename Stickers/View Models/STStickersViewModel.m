@@ -49,9 +49,9 @@
 	return [NSString stringWithFormat:@"%ld", section * 100];
 }
 
-- (StickerCellStatus)cellStatusForSticker:(STSticker *)sticker
+- (STStickerCellStatus)cellStatusForSticker:(STSticker *)sticker
 {
-	return sticker.amount ? StickerCellStatusOwnsSticker : StickerCellStatusDoesntOwnSticker;
+	return sticker.amount ? STStickerCellStatusOwnsSticker : STStickerCellStatusDoesntOwnSticker;
 }
 
 - (NSUInteger)numberOfSections
