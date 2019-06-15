@@ -1,5 +1,5 @@
 //
-// Sticker.h
+// STSticker.h
 // Stickers
 //
 // Created by Tomi De Lucca on 3/24/18.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Sticker : NSObject
+@interface STSticker : NSObject
 - (instancetype)initWithNumber:(NSUInteger)number amount:(NSUInteger)amount;
 @property (nonatomic) NSUInteger number;
 @property (nonatomic) NSUInteger amount;

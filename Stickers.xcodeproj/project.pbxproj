@@ -10,7 +10,7 @@
 		E655B12820683F2600FB2D6D /* Themes.txt in Resources */ = {isa = PBXBuildFile; fileRef = E655B12720683F2600FB2D6D /* Themes.txt */; };
 		E655B12B20684A0B00FB2D6D /* StickerStatisticsBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B12A20684A0B00FB2D6D /* StickerStatisticsBoxView.m */; };
 		E655B131206886DB00FB2D6D /* StickerStatisticView.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B130206886DB00FB2D6D /* StickerStatisticView.m */; };
-		E655B1342068890200FB2D6D /* StickerStatistic.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B1332068890200FB2D6D /* StickerStatistic.m */; };
+		E655B1342068890200FB2D6D /* STStickerStatistic.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B1332068890200FB2D6D /* STStickerStatistic.m */; };
 		E655B1372068895600FB2D6D /* STStickerStatisticViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B1362068895600FB2D6D /* STStickerStatisticViewModel.m */; };
 		E655B13A206892BF00FB2D6D /* StickerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B139206892BF00FB2D6D /* StickerProgressView.m */; };
 		E6B85B2920689ECE0099481E /* StickerSectionScrubber.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B85B2820689ECE0099481E /* StickerSectionScrubber.m */; };
@@ -18,11 +18,11 @@
 		E6FFC6DA2067352400B25631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6FFC6D92067352400B25631 /* Assets.xcassets */; };
 		E6FFC6E02067352400B25631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6DF2067352400B25631 /* main.m */; };
 		E6FFC6E8206735D500B25631 /* STStickersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6E7206735D500B25631 /* STStickersViewModel.m */; };
-		E6FFC6EB206735E100B25631 /* Sticker.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6EA206735E100B25631 /* Sticker.m */; };
+		E6FFC6EB206735E100B25631 /* STSticker.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6EA206735E100B25631 /* STSticker.m */; };
 		E6FFC6F22067363500B25631 /* MainStickersCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6F12067363500B25631 /* MainStickersCollectionViewController.m */; };
-		E6FFC6F720673C4800B25631 /* UserDefaultsStickerDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6F620673C4800B25631 /* UserDefaultsStickerDAO.m */; };
+		E6FFC6F720673C4800B25631 /* STUserDefaultsStickerDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6F620673C4800B25631 /* STUserDefaultsStickerDAO.m */; };
 		E6FFC6FA20673CE200B25631 /* StickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6F920673CE200B25631 /* StickerCollectionViewCell.m */; };
-		E6FFC6FD2067454E00B25631 /* StickersLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6FC2067454E00B25631 /* StickersLayout.m */; };
+		E6FFC6FD2067454E00B25631 /* STStickersLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6FC2067454E00B25631 /* STStickersLayout.m */; };
 		F506671963B2F7CD041A2F90 /* libPods-Stickers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8BB87D3DC1C7E2D6B9741A /* libPods-Stickers.a */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +34,8 @@
 		E655B12A20684A0B00FB2D6D /* StickerStatisticsBoxView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickerStatisticsBoxView.m; sourceTree = "<group>"; };
 		E655B12F206886DB00FB2D6D /* StickerStatisticView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerStatisticView.h; sourceTree = "<group>"; };
 		E655B130206886DB00FB2D6D /* StickerStatisticView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickerStatisticView.m; sourceTree = "<group>"; };
-		E655B1322068890200FB2D6D /* StickerStatistic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerStatistic.h; sourceTree = "<group>"; };
-		E655B1332068890200FB2D6D /* StickerStatistic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickerStatistic.m; sourceTree = "<group>"; };
+		E655B1322068890200FB2D6D /* STStickerStatistic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STStickerStatistic.h; sourceTree = "<group>"; };
+		E655B1332068890200FB2D6D /* STStickerStatistic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STStickerStatistic.m; sourceTree = "<group>"; };
 		E655B1352068895600FB2D6D /* STStickerStatisticViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STStickerStatisticViewModel.h; sourceTree = "<group>"; };
 		E655B1362068895600FB2D6D /* STStickerStatisticViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STStickerStatisticViewModel.m; sourceTree = "<group>"; };
 		E655B138206892BF00FB2D6D /* StickerProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerProgressView.h; sourceTree = "<group>"; };
@@ -50,17 +50,17 @@
 		E6FFC6DF2067352400B25631 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6FFC6E6206735D500B25631 /* STStickersViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STStickersViewModel.h; sourceTree = "<group>"; };
 		E6FFC6E7206735D500B25631 /* STStickersViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STStickersViewModel.m; sourceTree = "<group>"; };
-		E6FFC6E9206735E100B25631 /* Sticker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sticker.h; sourceTree = "<group>"; };
-		E6FFC6EA206735E100B25631 /* Sticker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sticker.m; sourceTree = "<group>"; };
+		E6FFC6E9206735E100B25631 /* STSticker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STSticker.h; sourceTree = "<group>"; };
+		E6FFC6EA206735E100B25631 /* STSticker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STSticker.m; sourceTree = "<group>"; };
 		E6FFC6F02067363500B25631 /* MainStickersCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainStickersCollectionViewController.h; sourceTree = "<group>"; };
 		E6FFC6F12067363500B25631 /* MainStickersCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainStickersCollectionViewController.m; sourceTree = "<group>"; };
 		E6FFC6F4206737EB00B25631 /* StickerDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerDAO.h; sourceTree = "<group>"; };
-		E6FFC6F520673C4800B25631 /* UserDefaultsStickerDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaultsStickerDAO.h; sourceTree = "<group>"; };
-		E6FFC6F620673C4800B25631 /* UserDefaultsStickerDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsStickerDAO.m; sourceTree = "<group>"; };
+		E6FFC6F520673C4800B25631 /* STUserDefaultsStickerDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STUserDefaultsStickerDAO.h; sourceTree = "<group>"; };
+		E6FFC6F620673C4800B25631 /* STUserDefaultsStickerDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STUserDefaultsStickerDAO.m; sourceTree = "<group>"; };
 		E6FFC6F820673CE200B25631 /* StickerCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerCollectionViewCell.h; sourceTree = "<group>"; };
 		E6FFC6F920673CE200B25631 /* StickerCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickerCollectionViewCell.m; sourceTree = "<group>"; };
-		E6FFC6FB2067454E00B25631 /* StickersLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickersLayout.h; sourceTree = "<group>"; };
-		E6FFC6FC2067454E00B25631 /* StickersLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickersLayout.m; sourceTree = "<group>"; };
+		E6FFC6FB2067454E00B25631 /* STStickersLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STStickersLayout.h; sourceTree = "<group>"; };
+		E6FFC6FC2067454E00B25631 /* STStickersLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STStickersLayout.m; sourceTree = "<group>"; };
 		E92B53A1907E00698F678D01 /* Pods-Stickers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stickers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stickers/Pods-Stickers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,14 +151,14 @@
 		E6FFC6ED2067360400B25631 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E6FFC6E9206735E100B25631 /* Sticker.h */,
-				E6FFC6EA206735E100B25631 /* Sticker.m */,
-				E6FFC6F520673C4800B25631 /* UserDefaultsStickerDAO.h */,
-				E6FFC6F620673C4800B25631 /* UserDefaultsStickerDAO.m */,
-				E6FFC6FB2067454E00B25631 /* StickersLayout.h */,
-				E6FFC6FC2067454E00B25631 /* StickersLayout.m */,
-				E655B1322068890200FB2D6D /* StickerStatistic.h */,
-				E655B1332068890200FB2D6D /* StickerStatistic.m */,
+				E6FFC6E9206735E100B25631 /* STSticker.h */,
+				E6FFC6EA206735E100B25631 /* STSticker.m */,
+				E6FFC6F520673C4800B25631 /* STUserDefaultsStickerDAO.h */,
+				E6FFC6F620673C4800B25631 /* STUserDefaultsStickerDAO.m */,
+				E6FFC6FB2067454E00B25631 /* STStickersLayout.h */,
+				E6FFC6FC2067454E00B25631 /* STStickersLayout.m */,
+				E655B1322068890200FB2D6D /* STStickerStatistic.h */,
+				E655B1332068890200FB2D6D /* STStickerStatistic.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -308,16 +308,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6FFC6EB206735E100B25631 /* Sticker.m in Sources */,
+				E6FFC6EB206735E100B25631 /* STSticker.m in Sources */,
 				E6B85B2920689ECE0099481E /* StickerSectionScrubber.m in Sources */,
-				E6FFC6FD2067454E00B25631 /* StickersLayout.m in Sources */,
+				E6FFC6FD2067454E00B25631 /* STStickersLayout.m in Sources */,
 				E655B13A206892BF00FB2D6D /* StickerProgressView.m in Sources */,
 				E6FFC6FA20673CE200B25631 /* StickerCollectionViewCell.m in Sources */,
-				E6FFC6F720673C4800B25631 /* UserDefaultsStickerDAO.m in Sources */,
+				E6FFC6F720673C4800B25631 /* STUserDefaultsStickerDAO.m in Sources */,
 				E655B131206886DB00FB2D6D /* StickerStatisticView.m in Sources */,
 				E6FFC6E02067352400B25631 /* main.m in Sources */,
 				E655B1372068895600FB2D6D /* STStickerStatisticViewModel.m in Sources */,
-				E655B1342068890200FB2D6D /* StickerStatistic.m in Sources */,
+				E655B1342068890200FB2D6D /* STStickerStatistic.m in Sources */,
 				E6FFC6F22067363500B25631 /* MainStickersCollectionViewController.m in Sources */,
 				E655B12B20684A0B00FB2D6D /* StickerStatisticsBoxView.m in Sources */,
 				E6FFC6E8206735D500B25631 /* STStickersViewModel.m in Sources */,

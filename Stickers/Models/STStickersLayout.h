@@ -1,5 +1,5 @@
 //
-// UserDefaultsStickerDAO.h
+// STStickersLayout.h
 // Stickers
 //
 // Created by Tomi De Lucca on 3/24/18.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "StickerDAO.h"
 
-@interface UserDefaultsStickerDAO : NSObject <StickerDAO>
+@interface STStickersLayout : UICollectionViewFlowLayout
 
 @end

@@ -10,19 +10,19 @@
 
 #import "StickerCollectionViewCell.h"
 #import "StickerDAO.h"
-#import "Sticker.h"
+#import "STSticker.h"
 
 @interface STStickersViewModel : NSObject
 
 - (instancetype)initWithStickerDAO:(id <StickerDAO> )dao;
 
 - (NSUInteger)numberOfSections;
-- (StickerCellStatus)cellStatusForSticker:(Sticker *)sticker;
-- (void)incrementAmountForSticker:(Sticker *)sticker;
-- (void)decrementAmountForSticker:(Sticker *)sticker;
+- (StickerCellStatus)cellStatusForSticker:(STSticker *)sticker;
+- (void)incrementAmountForSticker:(STSticker *)sticker;
+- (void)decrementAmountForSticker:(STSticker *)sticker;
 - (NSString *)titleForSection:(NSUInteger)section;
 - (NSUInteger)numberOfStickersInSection:(NSUInteger)section;
-- (Sticker *)stickerForSection:(NSUInteger)section andRow:(NSUInteger)row;
+- (STSticker *)stickerForSection:(NSUInteger)section andRow:(NSUInteger)row;
 - (NSString *)duplicatedStickers;
 - (NSString *)missingStickers;
 

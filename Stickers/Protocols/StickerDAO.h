@@ -9,16 +9,16 @@
 #ifndef StickerDAO_h
 #define StickerDAO_h
 
-#import "Sticker.h"
+#import "STSticker.h"
 
 @protocol StickerDAO
 - (NSUInteger)numberOfStickers;
 - (NSUInteger)numberOfOwnedStickers;
 - (NSUInteger)numberOfDuplicatedStickers;
-- (void)saveSticker:(Sticker *)sticker;
-- (NSArray <Sticker *> *)getDuplicateStickers;
-- (NSArray <Sticker *> *)getMissingStickers;
-- (Sticker *)stickerWithNumber:(NSUInteger)number;
+- (void)saveSticker:(STSticker *)sticker;
+- (NSArray <STSticker *> *)getDuplicateStickers;
+- (NSArray <STSticker *> *)getMissingStickers;
+- (STSticker *)stickerWithNumber:(NSUInteger)number;
 @end
 
 #endif

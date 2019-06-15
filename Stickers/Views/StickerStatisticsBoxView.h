@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#import "StickerStatistic.h"
+#import "STStickerStatistic.h"
 
 @interface StickerStatisticsBoxView : UIView
-- (instancetype)initWithStatistics:(NSArray <StickerStatistic *> *)statistics;
-- (void)updateWithStatistics:(NSArray <StickerStatistic *> *)statistics;
+- (instancetype)initWithStatistics:(NSArray <STStickerStatistic *> *)statistics;
+- (void)updateWithStatistics:(NSArray <STStickerStatistic *> *)statistics;
 @end

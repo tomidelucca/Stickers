@@ -1,25 +1,25 @@
 //
-// UserDefaultsStickerDAO.m
+// STUserDefaultsStickerDAO.m
 // Stickers
 //
 // Created by Tomi De Lucca on 3/24/18.
 // Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
-#import "UserDefaultsStickerDAO.h"
+#import "STUserDefaultsStickerDAO.h"
 
 static NSString *const kStickerRoot = @"sticker_root";
 static NSString *const kStickerNumber = @"number";
 static NSString *const kStickerAmount = @"amount";
 static NSInteger kStickerMax = 669;
 
-@interface UserDefaultsStickerDAO ()
+@interface STUserDefaultsStickerDAO ()
 @property (weak, nonatomic) NSUserDefaults *defaults;
 @property (strong, nonatomic) NSMutableArray *cache;
 @property (nonatomic) BOOL dirty;
 @end
 
-@implementation UserDefaultsStickerDAO
+@implementation STUserDefaultsStickerDAO
 
 - (instancetype)init
 {
@@ -79,7 +79,7 @@ static NSInteger kStickerMax = 669;
 	return duplicated;
 }
 
-- (NSArray <Sticker *> *)getDuplicateStickers
+- (NSArray <STSticker *> *)getDuplicateStickers
 {
 	NSMutableArray *duplicate = [[NSMutableArray alloc] init];
 
@@ -92,7 +92,7 @@ static NSInteger kStickerMax = 669;
 	return [duplicate copy];
 }
 
-- (NSArray <Sticker *> *)getMissingStickers
+- (NSArray <STSticker *> *)getMissingStickers
 {
 	NSMutableArray *missing = [[NSMutableArray alloc] init];
 
@@ -105,7 +105,7 @@ static NSInteger kStickerMax = 669;
 	return [missing copy];
 }
 
-- (void)saveSticker:(Sticker *)sticker
+- (void)saveSticker:(STSticker *)sticker
 {
 	NSMutableDictionary *copy = [[self.cache objectAtIndex:sticker.number] mutableCopy];
 	[copy setObject:@(sticker.amount) forKey:kStickerAmount];
@@ -113,10 +113,10 @@ static NSInteger kStickerMax = 669;
 	self.dirty = YES;
 }
 
-- (Sticker *)stickerWithNumber:(NSUInteger)number
+- (STSticker *)stickerWithNumber:(NSUInteger)number
 {
 	NSDictionary *sticker = [self.cache objectAtIndex:number];
-	return [[Sticker alloc] initWithNumber:[[sticker objectForKey:kStickerNumber] unsignedIntegerValue] amount:[[sticker objectForKey:kStickerAmount] unsignedIntegerValue]];
+	return [[STSticker alloc] initWithNumber:[[sticker objectForKey:kStickerNumber] unsignedIntegerValue] amount:[[sticker objectForKey:kStickerAmount] unsignedIntegerValue]];
 }
 
 #pragma mark - Private
@@ -126,7 +126,7 @@ static NSInteger kStickerMax = 669;
 	NSMutableArray *cache = [NSMutableArray new];
 
 	for (NSUInteger i = 0; i <= kStickerMax; i++) {
-		Sticker *sticker = [[Sticker alloc] initWithNumber:i amount:0];
+		STSticker *sticker = [[STSticker alloc] initWithNumber:i amount:0];
 		[cache addObject:[self stickerToDictionary:sticker]];
 	}
 
@@ -139,12 +139,12 @@ static NSInteger kStickerMax = 669;
 	return ![self.defaults objectForKey:kStickerRoot];
 }
 
-- (Sticker *)dictionaryToSticker:(NSDictionary *)dictionary
+- (STSticker *)dictionaryToSticker:(NSDictionary *)dictionary
 {
-	return [[Sticker alloc] initWithNumber:[[dictionary objectForKey:kStickerNumber] unsignedIntegerValue] amount:[[dictionary objectForKey:kStickerAmount] unsignedIntegerValue]];
+	return [[STSticker alloc] initWithNumber:[[dictionary objectForKey:kStickerNumber] unsignedIntegerValue] amount:[[dictionary objectForKey:kStickerAmount] unsignedIntegerValue]];
 }
 
-- (NSDictionary *)stickerToDictionary:(Sticker *)sticker
+- (NSDictionary *)stickerToDictionary:(STSticker *)sticker
 {
 	return @{kStickerNumber : @(sticker.number), kStickerAmount : @(sticker.amount)};
 }

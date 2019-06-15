@@ -1,14 +1,14 @@
 //
-// Sticker.m
+// STSticker.m
 // Stickers
 //
 // Created by Tomi De Lucca on 3/24/18.
 // Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
-#import "Sticker.h"
+#import "STSticker.h"
 
-@implementation Sticker
+@implementation STSticker
 
 - (instancetype)initWithNumber:(NSUInteger)number amount:(NSUInteger)amount
 {

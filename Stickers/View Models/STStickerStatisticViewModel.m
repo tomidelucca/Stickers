@@ -23,15 +23,15 @@
 	return self;
 }
 
-- (NSArray <StickerStatistic *> *)currentStatistics
+- (NSArray <STStickerStatistic *> *)currentStatistics
 {
 	NSUInteger owned = [self.dao numberOfOwnedStickers];
 	NSUInteger duplicated = [self.dao numberOfDuplicatedStickers];
 	NSUInteger total = [self.dao numberOfStickers];
 
-	StickerStatistic *uniqueStickers = [[StickerStatistic alloc] initWithTitle:@"Únicas" value:[@(owned)stringValue]];
-	StickerStatistic *duplicatedStickers = [[StickerStatistic alloc] initWithTitle:@"Repetidas" value:[@(duplicated)stringValue]];
-	StickerStatistic *missingStickers = [[StickerStatistic alloc] initWithTitle:@"Faltan" value:[@(total - owned)stringValue]];
+	STStickerStatistic *uniqueStickers = [[STStickerStatistic alloc] initWithTitle:@"Únicas" value:[@(owned)stringValue]];
+	STStickerStatistic *duplicatedStickers = [[STStickerStatistic alloc] initWithTitle:@"Repetidas" value:[@(duplicated)stringValue]];
+	STStickerStatistic *missingStickers = [[STStickerStatistic alloc] initWithTitle:@"Faltan" value:[@(total - owned)stringValue]];
 
 	return @[uniqueStickers, duplicatedStickers, missingStickers];
 }

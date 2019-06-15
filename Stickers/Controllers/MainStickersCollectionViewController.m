@@ -11,11 +11,11 @@
 #import "StickerCollectionViewCell.h"
 #import "STStickerStatisticViewModel.h"
 #import "StickerStatisticsBoxView.h"
-#import "UserDefaultsStickerDAO.h"
+#import "STUserDefaultsStickerDAO.h"
 #import "StickerSectionScrubber.h"
 #import "StickerProgressView.h"
 #import "STStickersViewModel.h"
-#import "StickersLayout.h"
+#import "STStickersLayout.h"
 
 #import <PureLayout/PureLayout.h>
 #import <DKNightVersion/DKNightVersion.h>
@@ -40,7 +40,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 
 	self.title = @"Russia 2018";
 
-	id <StickerDAO> userDefaultsDAO = [UserDefaultsStickerDAO new];
+	id <StickerDAO> userDefaultsDAO = [STUserDefaultsStickerDAO new];
 
 	self.viewModel = [[STStickersViewModel alloc] initWithStickerDAO:userDefaultsDAO];
 	self.statisticViewModel = [[STStickerStatisticViewModel alloc] initWithStickerDAO:userDefaultsDAO];
@@ -100,7 +100,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 
 - (void)configureCollectionView
 {
-	self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:[StickersLayout new]];
+	self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:[STStickersLayout new]];
 	self.collectionView.delegate = self;
 	self.collectionView.dataSource = self;
 	[self.view addSubview:self.collectionView];
@@ -159,7 +159,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 {
 	StickerCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellReuseIdentifier forIndexPath:indexPath];
 
-	Sticker *sticker = [self.viewModel stickerForSection:indexPath.section andRow:indexPath.row];
+	STSticker *sticker = [self.viewModel stickerForSection:indexPath.section andRow:indexPath.row];
 
 	[cell updateWithTitle:[@(sticker.number)stringValue] andSubtitle:[@(sticker.amount)stringValue]];
 	[cell setStatus:[self.viewModel cellStatusForSticker:sticker]];
@@ -173,7 +173,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 {
 	[collectionView deselectItemAtIndexPath:indexPath animated:YES];
 
-	Sticker *sticker = [self.viewModel stickerForSection:indexPath.section andRow:indexPath.row];
+	STSticker *sticker = [self.viewModel stickerForSection:indexPath.section andRow:indexPath.row];
 	[self.viewModel incrementAmountForSticker:sticker];
 
 	[self updateUserInterfaceAtIndexPath:indexPath];
@@ -215,7 +215,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 		return;
 	}
 
-	Sticker *sticker = [self.viewModel stickerForSection:indexPath.section andRow:indexPath.row];
+	STSticker *sticker = [self.viewModel stickerForSection:indexPath.section andRow:indexPath.row];
 	[self.viewModel decrementAmountForSticker:sticker];
 
 	[self updateUserInterfaceAtIndexPath:indexPath];

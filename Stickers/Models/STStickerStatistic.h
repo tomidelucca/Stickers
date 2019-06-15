@@ -1,5 +1,5 @@
 //
-// StickerStatistic.h
+// STStickerStatistic.h
 // Stickers
 //
 // Created by Tomi De Lucca on 3/25/18.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface StickerStatistic : NSObject
+@interface STStickerStatistic : NSObject
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *value;
 - (instancetype)initWithTitle:(NSString *)title value:(NSString *)value;

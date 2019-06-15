@@ -19,7 +19,7 @@
 
 @implementation StickerStatisticsBoxView
 
-- (instancetype)initWithStatistics:(NSArray <StickerStatistic *> *)statistics
+- (instancetype)initWithStatistics:(NSArray <STStickerStatistic *> *)statistics
 {
 	self = [super init];
 	if (self) {
@@ -28,7 +28,7 @@
 	return self;
 }
 
-- (void)setupViewWithStatistics:(NSArray <StickerStatistic *> *)statistics
+- (void)setupViewWithStatistics:(NSArray <STStickerStatistic *> *)statistics
 {
 	[self dk_setBackgroundColorPicker:DKColorPickerWithKey(BG)];
 
@@ -40,7 +40,7 @@
 
 	[containerView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(20.0f, 10.0f, 20.0f, 10.0f)];
 
-	for (StickerStatistic *stat in statistics) {
+	for (STStickerStatistic *stat in statistics) {
 		StickerStatisticView *sv = [[StickerStatisticView alloc] initWithTitle:stat.title];
 		[sv updateWithValue:stat.value];
 		[containerView addSubview:sv];
@@ -58,9 +58,9 @@
 	self.statistics = [stats copy];
 }
 
-- (void)updateWithStatistics:(NSArray <StickerStatistic *> *)statistics
+- (void)updateWithStatistics:(NSArray <STStickerStatistic *> *)statistics
 {
-	for (StickerStatistic *stat in statistics) {
+	for (STStickerStatistic *stat in statistics) {
 		StickerStatisticView *sv = [self.statistics objectForKey:stat.title];
 		[sv updateWithValue:stat.value];
 	}

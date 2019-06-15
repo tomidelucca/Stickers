@@ -23,13 +23,13 @@
 	return self;
 }
 
-- (void)incrementAmountForSticker:(Sticker *)sticker
+- (void)incrementAmountForSticker:(STSticker *)sticker
 {
 	sticker.amount++;
 	[self.dao saveSticker:sticker];
 }
 
-- (void)decrementAmountForSticker:(Sticker *)sticker
+- (void)decrementAmountForSticker:(STSticker *)sticker
 {
 	if (sticker.amount == 0) {
 		return;
@@ -39,7 +39,7 @@
 	[self.dao saveSticker:sticker];
 }
 
-- (Sticker *)stickerForSection:(NSUInteger)section andRow:(NSUInteger)row
+- (STSticker *)stickerForSection:(NSUInteger)section andRow:(NSUInteger)row
 {
 	return [self.dao stickerWithNumber:(section * 100 + row)];
 }
@@ -49,7 +49,7 @@
 	return [NSString stringWithFormat:@"%ld", section * 100];
 }
 
-- (StickerCellStatus)cellStatusForSticker:(Sticker *)sticker
+- (StickerCellStatus)cellStatusForSticker:(STSticker *)sticker
 {
 	return sticker.amount ? StickerCellStatusOwnsSticker : StickerCellStatusDoesntOwnSticker;
 }
@@ -83,7 +83,7 @@
 		return @"";
 	}
 
-	for (Sticker *sticker in dup) {
+	for (STSticker *sticker in dup) {
 		[duplicated appendFormat:@"%ld, ", sticker.number];
 	}
 
@@ -100,7 +100,7 @@
 		return @"";
 	}
 
-	for (Sticker *sticker in mis) {
+	for (STSticker *sticker in mis) {
 		[missing appendFormat:@"%ld, ", sticker.number];
 	}
 

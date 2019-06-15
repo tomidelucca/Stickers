@@ -1,14 +1,14 @@
 //
-// StickerStatistic.m
+// STStickerStatistic.m
 // Stickers
 //
 // Created by Tomi De Lucca on 3/25/18.
 // Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
-#import "StickerStatistic.h"
+#import "STStickerStatistic.h"
 
-@implementation StickerStatistic
+@implementation STStickerStatistic
 
 - (instancetype)initWithTitle:(NSString *)title value:(NSString *)value
 {
