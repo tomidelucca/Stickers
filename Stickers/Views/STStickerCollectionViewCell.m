@@ -77,16 +77,16 @@
 
 - (void)setUnownedStatus
 {
-	[self dk_setBackgroundColorPicker:DKColorPickerWithKey(UNONWNED_STICKER_BG)];
-	[self.title dk_setTextColorPicker:DKColorPickerWithKey(UNONWNED_STICKER_TITLE)];
-	[self.subtitle dk_setTextColorPicker:DKColorPickerWithKey(UNONWNED_STICKER_SUBTITLE)];
+    [self setBackgroundColor:[UIColor colorNamed:@"unowned-sticker-background"]];
+    [self.title setTextColor:[UIColor colorNamed:@"unowned-sticker-title"]];
+    [self.subtitle setTextColor:[UIColor colorNamed:@"unowned-sticker-subtitle"]];
 }
 
 - (void)setOwnedStatus
 {
-	[self dk_setBackgroundColorPicker:DKColorPickerWithKey(OWNED_STICKER_BG)];
-	[self.title dk_setTextColorPicker:DKColorPickerWithKey(OWNED_STICKER_TITLE)];
-	[self.subtitle dk_setTextColorPicker:DKColorPickerWithKey(OWNED_STICKER_SUBTITLE)];
+    [self setBackgroundColor:[UIColor colorNamed:@"owned-sticker-background"]];
+    [self.title setTextColor:[UIColor colorNamed:@"owned-sticker-title"]];
+    [self.subtitle setTextColor:[UIColor colorNamed:@"owned-sticker-subtitle"]];
 }
 
 @end

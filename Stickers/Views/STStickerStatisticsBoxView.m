@@ -30,7 +30,7 @@
 
 - (void)setupViewWithStatistics:(NSArray <STStickerStatistic *> *)statistics
 {
-	[self dk_setBackgroundColorPicker:DKColorPickerWithKey(BG)];
+    [self setBackgroundColor:[UIColor colorNamed:@"background"]];
 
 	NSMutableDictionary *stats = [[NSMutableDictionary alloc] initWithCapacity:statistics.count];
 	NSMutableArray *statsViews = [[NSMutableArray alloc] initWithCapacity:statistics.count];

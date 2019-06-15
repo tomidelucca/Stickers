@@ -40,13 +40,13 @@
 	[self.title autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeTop];
 	[self.title autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.value withOffset:6.0f];
 
-	[self.title dk_setTextColorPicker:DKColorPickerWithKey(TEXT)];
+    [self.title setTextColor:[UIColor colorNamed:@"text"]];
 	[self.title setFont:[UIFont boldSystemFontOfSize:12.0f]];
 	[self.title setTextAlignment:NSTextAlignmentCenter];
 	[self.title setText:title];
 
-	[self.value dk_setTextColorPicker:DKColorPickerWithKey(STAT_VALUE_TEXT)];
-	[self.value dk_setBackgroundColorPicker:DKColorPickerWithKey(STAT_VALUE_BG)];
+    [self.value setTextColor:[UIColor colorNamed:@"stat-value-text"]];
+    [self.value setBackgroundColor:[UIColor colorNamed:@"stat-value-background"]];
 	[self.value setFont:[UIFont boldSystemFontOfSize:16.0f]];
 	[self.value setTextAlignment:NSTextAlignmentCenter];
 	[self.value.layer setCornerRadius:12.0f];

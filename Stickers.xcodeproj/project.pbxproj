@@ -96,6 +96,7 @@
 		E655B12620683F0700FB2D6D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E6FFC6D92067352400B25631 /* Assets.xcassets */,
 				E655B12720683F2600FB2D6D /* Themes.txt */,
 			);
 			path = Resources;
@@ -130,7 +131,6 @@
 				E6FFC6EC206735FA00B25631 /* View Models */,
 				E6FFC6D02067352400B25631 /* STAppDelegate.h */,
 				E6FFC6D12067352400B25631 /* STAppDelegate.m */,
-				E6FFC6D92067352400B25631 /* Assets.xcassets */,
 				E6FFC6DE2067352400B25631 /* Info.plist */,
 				E6FFC6DF2067352400B25631 /* main.m */,
 			);

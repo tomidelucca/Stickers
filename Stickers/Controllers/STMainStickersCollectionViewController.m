@@ -58,10 +58,10 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 	UIBarButtonItem *share = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(openShareSheet)];
 	self.navigationItem.rightBarButtonItem = share;
 	self.edgesForExtendedLayout = UIRectEdgeNone;
-	[self.view dk_setBackgroundColorPicker:DKColorPickerWithKey(BG)];
+    [self.view setBackgroundColor:[UIColor colorNamed:@"background"]];
 
-	[self.navigationController.navigationBar dk_setBarTintColorPicker:DKColorPickerWithKey(NAVBAR_BG_TINT)];
-	[self.navigationController.navigationBar dk_setTintColorPicker:DKColorPickerWithKey(NAVBAR_TEXT_TINT)];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorNamed:@"navbar-background-tint"]];
+    [self.navigationController.navigationBar setTintColor:[UIColor colorNamed:@"navbar-text-tint"]];
 	[self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
 }
 
@@ -88,7 +88,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 - (void)configureSeparatorView
 {
 	self.separator = [UIView newAutoLayoutView];
-	[self.separator dk_setBackgroundColorPicker:DKColorPickerWithKey(SEPARATOR_COLOR)];
+    [self.separator setBackgroundColor:[UIColor colorNamed:@"separator-color"]];
 	[self.separator setHidden:YES];
 	[self.view addSubview:self.separator];
 
@@ -109,7 +109,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 	[self.collectionView autoPinEdgeToSuperviewEdge:ALEdgeRight];
 	[self.collectionView autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.separator];
 
-	[self.collectionView dk_setBackgroundColorPicker:DKColorPickerWithKey(BG)];
+    [self.collectionView setBackgroundColor:[UIColor colorNamed:@"background"]];
 	[self.collectionView registerClass:[STStickerCollectionViewCell class] forCellWithReuseIdentifier:cellReuseIdentifier];
 
 	UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressed:)];
