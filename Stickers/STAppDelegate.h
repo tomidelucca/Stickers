@@ -1,5 +1,5 @@
 //
-// AppDelegate.h
+// STAppDelegate.h
 // Stickers
 //
 // Created by Tomi De Lucca on 3/24/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface STAppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow *window;
 @end

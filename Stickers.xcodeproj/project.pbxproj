@@ -14,7 +14,7 @@
 		E655B1372068895600FB2D6D /* StickerStatisticViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B1362068895600FB2D6D /* StickerStatisticViewModel.m */; };
 		E655B13A206892BF00FB2D6D /* StickerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B139206892BF00FB2D6D /* StickerProgressView.m */; };
 		E6B85B2920689ECE0099481E /* StickerSectionScrubber.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B85B2820689ECE0099481E /* StickerSectionScrubber.m */; };
-		E6FFC6D22067352400B25631 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6D12067352400B25631 /* AppDelegate.m */; };
+		E6FFC6D22067352400B25631 /* STAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6D12067352400B25631 /* STAppDelegate.m */; };
 		E6FFC6DA2067352400B25631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6FFC6D92067352400B25631 /* Assets.xcassets */; };
 		E6FFC6DD2067352400B25631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FFC6DB2067352400B25631 /* LaunchScreen.storyboard */; };
 		E6FFC6E02067352400B25631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC6DF2067352400B25631 /* main.m */; };
@@ -44,8 +44,8 @@
 		E6B85B2720689ECE0099481E /* StickerSectionScrubber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerSectionScrubber.h; sourceTree = "<group>"; };
 		E6B85B2820689ECE0099481E /* StickerSectionScrubber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickerSectionScrubber.m; sourceTree = "<group>"; };
 		E6FFC6CD2067352400B25631 /* Stickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6FFC6D02067352400B25631 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E6FFC6D12067352400B25631 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E6FFC6D02067352400B25631 /* STAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STAppDelegate.h; sourceTree = "<group>"; };
+		E6FFC6D12067352400B25631 /* STAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STAppDelegate.m; sourceTree = "<group>"; };
 		E6FFC6D92067352400B25631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6FFC6DC2067352400B25631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6FFC6DE2067352400B25631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,8 +130,8 @@
 				E6FFC6EE2067360900B25631 /* Controllers */,
 				E6FFC6ED2067360400B25631 /* Models */,
 				E6FFC6EC206735FA00B25631 /* View Models */,
-				E6FFC6D02067352400B25631 /* AppDelegate.h */,
-				E6FFC6D12067352400B25631 /* AppDelegate.m */,
+				E6FFC6D02067352400B25631 /* STAppDelegate.h */,
+				E6FFC6D12067352400B25631 /* STAppDelegate.m */,
 				E6FFC6D92067352400B25631 /* Assets.xcassets */,
 				E6FFC6DB2067352400B25631 /* LaunchScreen.storyboard */,
 				E6FFC6DE2067352400B25631 /* Info.plist */,
@@ -211,7 +211,6 @@
 				E6FFC6C92067352400B25631 /* Sources */,
 				E6FFC6CA2067352400B25631 /* Frameworks */,
 				E6FFC6CB2067352400B25631 /* Resources */,
-				B3B6550A5F8CB713DD3090DC /* [CP] Embed Pods Frameworks */,
 				B8412DB853E7CCE1EF319527 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -229,7 +228,7 @@
 		E6FFC6C52067352400B25631 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Tomi De Lucca";
 				TargetAttributes = {
 					E6FFC6CC2067352400B25631 = {
@@ -288,28 +287,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B3B6550A5F8CB713DD3090DC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stickers/Pods-Stickers-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B8412DB853E7CCE1EF319527 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Stickers/Pods-Stickers-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Stickers/Pods-Stickers-resources.sh",
 				"${PODS_ROOT}/DKNightVersion/DKNightVersion/ColorTable/DKColorTable.txt",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -318,7 +302,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stickers/Pods-Stickers-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stickers/Pods-Stickers-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -341,7 +325,7 @@
 				E6FFC6F22067363500B25631 /* MainStickersCollectionViewController.m in Sources */,
 				E655B12B20684A0B00FB2D6D /* StickerStatisticsBoxView.m in Sources */,
 				E6FFC6E8206735D500B25631 /* StickersViewModel.m in Sources */,
-				E6FFC6D22067352400B25631 /* AppDelegate.m in Sources */,
+				E6FFC6D22067352400B25631 /* STAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +357,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -380,6 +365,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -428,6 +414,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -435,6 +422,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

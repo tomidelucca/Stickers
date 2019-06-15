@@ -1,12 +1,12 @@
 //
-// AppDelegate.m
+// STAppDelegate.m
 // Stickers
 //
 // Created by Tomi De Lucca on 3/24/18.
 // Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "STAppDelegate.h"
 
 #import "MainStickersCollectionViewController.h"
 
@@ -14,7 +14,7 @@
 
 static NSString *const kThemeFile = @"Themes.txt";
 
-@implementation AppDelegate
+@implementation STAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
