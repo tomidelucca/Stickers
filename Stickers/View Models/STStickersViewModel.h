@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 #import "STStickerCollectionViewCell.h"
-#import "StickerDAO.h"
+#import "STStickerDAO.h"
 #import "STSticker.h"
 
 @interface STStickersViewModel : NSObject
 
-- (instancetype)initWithStickerDAO:(id <StickerDAO> )dao;
+- (instancetype)initWithStickerDAO:(id <STStickerDAO> )dao;
 
 - (NSUInteger)numberOfSections;
 - (STStickerCellStatus)cellStatusForSticker:(STSticker *)sticker;

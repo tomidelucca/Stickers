@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 #import "STStickerStatistic.h"
-#import "StickerDAO.h"
+#import "STStickerDAO.h"
 
 @interface STStickerStatisticViewModel : NSObject
-- (instancetype)initWithStickerDAO:(id <StickerDAO> )dao;
+- (instancetype)initWithStickerDAO:(id <STStickerDAO> )dao;
 - (NSArray <STStickerStatistic *> *)currentStatistics;
 - (NSDecimalNumber *)totalProgress;
 @end

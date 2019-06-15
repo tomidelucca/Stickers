@@ -54,7 +54,7 @@
 		E6FFC6EA206735E100B25631 /* STSticker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STSticker.m; sourceTree = "<group>"; };
 		E6FFC6F02067363500B25631 /* STMainStickersCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STMainStickersCollectionViewController.h; sourceTree = "<group>"; };
 		E6FFC6F12067363500B25631 /* STMainStickersCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STMainStickersCollectionViewController.m; sourceTree = "<group>"; };
-		E6FFC6F4206737EB00B25631 /* StickerDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickerDAO.h; sourceTree = "<group>"; };
+		E6FFC6F4206737EB00B25631 /* STStickerDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STStickerDAO.h; sourceTree = "<group>"; };
 		E6FFC6F520673C4800B25631 /* STUserDefaultsStickerDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STUserDefaultsStickerDAO.h; sourceTree = "<group>"; };
 		E6FFC6F620673C4800B25631 /* STUserDefaultsStickerDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STUserDefaultsStickerDAO.m; sourceTree = "<group>"; };
 		E6FFC6F820673CE200B25631 /* STStickerCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STStickerCollectionViewCell.h; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 		E6FFC6F3206737DB00B25631 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E6FFC6F4206737EB00B25631 /* StickerDAO.h */,
+				E6FFC6F4206737EB00B25631 /* STStickerDAO.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";

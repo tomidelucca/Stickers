@@ -40,7 +40,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 
 	self.title = @"Russia 2018";
 
-	id <StickerDAO> userDefaultsDAO = [STUserDefaultsStickerDAO new];
+	id <STStickerDAO> userDefaultsDAO = [STUserDefaultsStickerDAO new];
 
 	self.viewModel = [[STStickersViewModel alloc] initWithStickerDAO:userDefaultsDAO];
 	self.statisticViewModel = [[STStickerStatisticViewModel alloc] initWithStickerDAO:userDefaultsDAO];

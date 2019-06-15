@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "StickerDAO.h"
+#import "STStickerDAO.h"
 
-@interface STUserDefaultsStickerDAO : NSObject <StickerDAO>
+@interface STUserDefaultsStickerDAO : NSObject <STStickerDAO>
 
 @end

@@ -9,12 +9,12 @@
 #import "STStickerStatisticViewModel.h"
 
 @interface STStickerStatisticViewModel ()
-@property (weak, nonatomic) id <StickerDAO> dao;
+@property (weak, nonatomic) id <STStickerDAO> dao;
 @end
 
 @implementation STStickerStatisticViewModel
 
-- (instancetype)initWithStickerDAO:(id <StickerDAO> )dao
+- (instancetype)initWithStickerDAO:(id <STStickerDAO> )dao
 {
 	self = [super init];
 	if (self) {
