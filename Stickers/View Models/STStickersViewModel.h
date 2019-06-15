@@ -1,5 +1,5 @@
 //
-// StickersViewModel.h
+// STStickersViewModel.h
 // Stickers
 //
 // Created by Tomi De Lucca on 3/24/18.
@@ -12,7 +12,7 @@
 #import "StickerDAO.h"
 #import "Sticker.h"
 
-@interface StickersViewModel : NSObject
+@interface STStickersViewModel : NSObject
 
 - (instancetype)initWithStickerDAO:(id <StickerDAO> )dao;
 

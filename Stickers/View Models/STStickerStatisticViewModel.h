@@ -1,5 +1,5 @@
 //
-// StickerStatisticViewModel.h
+// STStickerStatisticViewModel.h
 // Stickers
 //
 // Created by Tomi De Lucca on 3/25/18.
@@ -11,7 +11,7 @@
 #import "StickerStatistic.h"
 #import "StickerDAO.h"
 
-@interface StickerStatisticViewModel : NSObject
+@interface STStickerStatisticViewModel : NSObject
 - (instancetype)initWithStickerDAO:(id <StickerDAO> )dao;
 - (NSArray <StickerStatistic *> *)currentStatistics;
 - (NSDecimalNumber *)totalProgress;

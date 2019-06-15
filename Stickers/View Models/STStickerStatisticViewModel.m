@@ -1,18 +1,18 @@
 //
-// StickerStatisticViewModel.m
+// STStickerStatisticViewModel.m
 // Stickers
 //
 // Created by Tomi De Lucca on 3/25/18.
 // Copyright © 2018 Tomi De Lucca. All rights reserved.
 //
 
-#import "StickerStatisticViewModel.h"
+#import "STStickerStatisticViewModel.h"
 
-@interface StickerStatisticViewModel ()
+@interface STStickerStatisticViewModel ()
 @property (weak, nonatomic) id <StickerDAO> dao;
 @end
 
-@implementation StickerStatisticViewModel
+@implementation STStickerStatisticViewModel
 
 - (instancetype)initWithStickerDAO:(id <StickerDAO> )dao
 {

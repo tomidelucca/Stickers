@@ -9,20 +9,20 @@
 #import "MainStickersCollectionViewController.h"
 
 #import "StickerCollectionViewCell.h"
-#import "StickerStatisticViewModel.h"
+#import "STStickerStatisticViewModel.h"
 #import "StickerStatisticsBoxView.h"
 #import "UserDefaultsStickerDAO.h"
 #import "StickerSectionScrubber.h"
 #import "StickerProgressView.h"
-#import "StickersViewModel.h"
+#import "STStickersViewModel.h"
 #import "StickersLayout.h"
 
 #import <PureLayout/PureLayout.h>
 #import <DKNightVersion/DKNightVersion.h>
 
 @interface MainStickersCollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource, StickerSectionScrubberDelegate>
-@property (strong, nonatomic) StickersViewModel *viewModel;
-@property (strong, nonatomic) StickerStatisticViewModel *statisticViewModel;
+@property (strong, nonatomic) STStickersViewModel *viewModel;
+@property (strong, nonatomic) STStickerStatisticViewModel *statisticViewModel;
 @property (strong, nonatomic) StickerStatisticsBoxView *statisticsBoxView;
 @property (strong, nonatomic) StickerProgressView *stickerProgressView;
 @property (strong, nonatomic) StickerSectionScrubber *sectionScrubber;
@@ -42,8 +42,8 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 
 	id <StickerDAO> userDefaultsDAO = [UserDefaultsStickerDAO new];
 
-	self.viewModel = [[StickersViewModel alloc] initWithStickerDAO:userDefaultsDAO];
-	self.statisticViewModel = [[StickerStatisticViewModel alloc] initWithStickerDAO:userDefaultsDAO];
+	self.viewModel = [[STStickersViewModel alloc] initWithStickerDAO:userDefaultsDAO];
+	self.statisticViewModel = [[STStickerStatisticViewModel alloc] initWithStickerDAO:userDefaultsDAO];
 
 	[self configureNavigationBar];
 	[self configureStatisticsView];
