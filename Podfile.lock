@@ -1,27 +1,16 @@
 PODS:
-  - DKNightVersion (2.4.3):
-    - DKNightVersion/Core (= 2.4.3)
-    - DKNightVersion/CoreAnimation (= 2.4.3)
-    - DKNightVersion/UIKit (= 2.4.3)
-  - DKNightVersion/Core (2.4.3):
-    - DKNightVersion/Core/DeallocBlockExecutor (= 2.4.3)
-    - DKNightVersion/Core/extobjc (= 2.4.3)
-  - DKNightVersion/Core/DeallocBlockExecutor (2.4.3)
-  - DKNightVersion/Core/extobjc (2.4.3)
-  - DKNightVersion/CoreAnimation (2.4.3):
-    - DKNightVersion/Core
-  - DKNightVersion/UIKit (2.4.3):
-    - DKNightVersion/Core
-  - PureLayout (3.0.2)
+  - PureLayout (3.1.4)
 
 DEPENDENCIES:
-  - DKNightVersion
   - PureLayout
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PureLayout
+
 SPEC CHECKSUMS:
-  DKNightVersion: eaa80cc4014b4bae7d4b535fd87ecc6a3c2767b3
-  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
 
-PODFILE CHECKSUM: 630fa98e019e13308031efdb95437e9441363498
+PODFILE CHECKSUM: 141ee4775185091e8a998c8bcffe23b295e003f9
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.7.2
