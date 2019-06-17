@@ -29,7 +29,7 @@
 
 - (void)setupViewWithStatistics:(NSArray <STStickerStatistic *> *)statistics
 {
-    [self setBackgroundColor:[UIColor colorNamed:@"background"]];
+	[self setBackgroundColor:[UIColor colorNamed:@"background"]];
 
 	NSMutableDictionary *stats = [[NSMutableDictionary alloc] initWithCapacity:statistics.count];
 	NSMutableArray *statsViews = [[NSMutableArray alloc] initWithCapacity:statistics.count];

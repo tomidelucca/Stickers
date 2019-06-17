@@ -32,8 +32,8 @@
 
 	for (NSUInteger i = 0; i < sections; i++) {
 		UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [button setBackgroundColor:[UIColor colorNamed:@"unowned-sticker-background"]];
-        [button setTintColor:[UIColor colorNamed:@"unowned-sticker-title"]];
+		[button setBackgroundColor:[UIColor colorNamed:@"unowned-sticker-background"]];
+		[button setTintColor:[UIColor colorNamed:@"unowned-sticker-title"]];
 		[button setTitle:[@(i)stringValue] forState:UIControlStateNormal];
 		[button.layer setCornerRadius:6.0f];
 		[button addTarget:self action:@selector(sectionWasSelected:) forControlEvents:UIControlEventTouchUpInside];
@@ -52,7 +52,7 @@
 	}
 
 	UIView *separator = [UIView newAutoLayoutView];
-    [separator setBackgroundColor:[UIColor colorNamed:@"separator-color"]];
+	[separator setBackgroundColor:[UIColor colorNamed:@"separator-color"]];
 	[self addSubview:separator];
 
 	[separator autoSetDimension:ALDimensionHeight toSize:1.0f];

@@ -40,10 +40,10 @@
 
 	[self.percentage setFont:[UIFont systemFontOfSize:12.0f]];
 	[self.percentage setTextAlignment:NSTextAlignmentCenter];
-    [self.percentage setTextColor:[UIColor colorNamed:@"text"]];
+	[self.percentage setTextColor:[UIColor colorNamed:@"text"]];
 
-    [self.progressBar setTintColor:[UIColor colorNamed:@"progress-bar-fill"]];
-    [self.progressBar setBackgroundColor:[UIColor colorNamed:@"progress-bar-background"]];
+	[self.progressBar setTintColor:[UIColor colorNamed:@"progress-bar-fill"]];
+	[self.progressBar setBackgroundColor:[UIColor colorNamed:@"progress-bar-background"]];
 }
 
 - (void)updateWithProgress:(NSDecimalNumber *)progress

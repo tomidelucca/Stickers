@@ -14,7 +14,7 @@
 
 @implementation STStickerStatisticViewModel
 
-- (instancetype)initWithStickerDAO:(id <STStickerDAO> )dao
+- (instancetype)initWithStickerDAO:(id <STStickerDAO>)dao
 {
 	self = [super init];
 	if (self) {
@@ -30,13 +30,13 @@
 	NSUInteger total = [self.dao numberOfStickers];
 
 	STStickerStatistic *uniqueStickers = [[STStickerStatistic alloc] initWithTitle:NSLocalizedString(@"OWNED", @"Owned Stickers")
-                                                                             value:[@(owned)stringValue]];
-    
+	                                                                         value:[@(owned)stringValue]];
+
 	STStickerStatistic *duplicatedStickers = [[STStickerStatistic alloc] initWithTitle:NSLocalizedString(@"DUPLICATED", @"Duplicated Stickers")
-                                                                                 value:[@(duplicated)stringValue]];
-    
+	                                                                             value:[@(duplicated)stringValue]];
+
 	STStickerStatistic *missingStickers = [[STStickerStatistic alloc] initWithTitle:NSLocalizedString(@"MISSING", @"Missing Stickers")
-                                                                              value:[@(total - owned)stringValue]];
+	                                                                          value:[@(total - owned)stringValue]];
 
 	return @[uniqueStickers, duplicatedStickers, missingStickers];
 }

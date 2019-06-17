@@ -14,7 +14,7 @@
 
 @implementation STStickersViewModel
 
-- (instancetype)initWithStickerDAO:(id <STStickerDAO> )dao
+- (instancetype)initWithStickerDAO:(id <STStickerDAO>)dao
 {
 	self = [super init];
 	if (self) {

@@ -37,7 +37,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 {
 	[super viewDidLoad];
 
-    self.title = NSLocalizedString(@"RUSSIA_2018", @"Navigation Bar Title");
+	self.title = NSLocalizedString(@"RUSSIA_2018", @"Navigation Bar Title");
 
 	id <STStickerDAO> userDefaultsDAO = [STUserDefaultsStickerDAO new];
 
@@ -57,10 +57,10 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 	UIBarButtonItem *share = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(openShareSheet)];
 	self.navigationItem.rightBarButtonItem = share;
 	self.edgesForExtendedLayout = UIRectEdgeNone;
-    [self.view setBackgroundColor:[UIColor colorNamed:@"background"]];
+	[self.view setBackgroundColor:[UIColor colorNamed:@"background"]];
 
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorNamed:@"navbar-background-tint"]];
-    [self.navigationController.navigationBar setTintColor:[UIColor colorNamed:@"navbar-text-tint"]];
+	[self.navigationController.navigationBar setBarTintColor:[UIColor colorNamed:@"navbar-background-tint"]];
+	[self.navigationController.navigationBar setTintColor:[UIColor colorNamed:@"navbar-text-tint"]];
 	[self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
 }
 
@@ -87,7 +87,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 - (void)configureSeparatorView
 {
 	self.separator = [UIView newAutoLayoutView];
-    [self.separator setBackgroundColor:[UIColor colorNamed:@"separator-color"]];
+	[self.separator setBackgroundColor:[UIColor colorNamed:@"separator-color"]];
 	[self.separator setHidden:YES];
 	[self.view addSubview:self.separator];
 
@@ -108,7 +108,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 	[self.collectionView autoPinEdgeToSuperviewEdge:ALEdgeRight];
 	[self.collectionView autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.separator];
 
-    [self.collectionView setBackgroundColor:[UIColor colorNamed:@"background"]];
+	[self.collectionView setBackgroundColor:[UIColor colorNamed:@"background"]];
 	[self.collectionView registerClass:[STStickerCollectionViewCell class] forCellWithReuseIdentifier:cellReuseIdentifier];
 
 	UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressed:)];
@@ -225,23 +225,23 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 - (void)openShareSheet
 {
 	UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
-		                                                           message:nil
-		                                                    preferredStyle:UIAlertControllerStyleActionSheet];
+	                                                               message:nil
+	                                                        preferredStyle:UIAlertControllerStyleActionSheet];
 
 	__weak __typeof__(self)weakSelf = self;
 
 	UIAlertAction *duplicated = [UIAlertAction actionWithTitle:NSLocalizedString(@"DUPLICATED", @"Duplicated Stickers")
-                                                         style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
-		[[UIPasteboard generalPasteboard] setString:[weakSelf.viewModel duplicatedStickers]];
+	                                                     style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
+	    [[UIPasteboard generalPasteboard] setString:[weakSelf.viewModel duplicatedStickers]];
 	}];
 
 	UIAlertAction *missing = [UIAlertAction actionWithTitle:NSLocalizedString(@"MISSING", @"Missing Stickers")
-                                                      style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
-		[[UIPasteboard generalPasteboard] setString:[weakSelf.viewModel missingStickers]];
+	                                                  style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
+	    [[UIPasteboard generalPasteboard] setString:[weakSelf.viewModel missingStickers]];
 	}];
 
 	UIAlertAction *cancel = [UIAlertAction actionWithTitle:NSLocalizedString(@"CANCEL", @"Share Stickers cancel action")
-                                                     style:UIAlertActionStyleCancel handler:nil];
+	                                                 style:UIAlertActionStyleCancel handler:nil];
 
 	[alert addAction:missing];
 	[alert addAction:duplicated];

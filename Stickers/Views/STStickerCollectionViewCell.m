@@ -74,16 +74,16 @@
 
 - (void)setUnownedStatus
 {
-    [self setBackgroundColor:[UIColor colorNamed:@"unowned-sticker-background"]];
-    [self.title setTextColor:[UIColor colorNamed:@"unowned-sticker-title"]];
-    [self.subtitle setTextColor:[UIColor colorNamed:@"unowned-sticker-subtitle"]];
+	[self setBackgroundColor:[UIColor colorNamed:@"unowned-sticker-background"]];
+	[self.title setTextColor:[UIColor colorNamed:@"unowned-sticker-title"]];
+	[self.subtitle setTextColor:[UIColor colorNamed:@"unowned-sticker-subtitle"]];
 }
 
 - (void)setOwnedStatus
 {
-    [self setBackgroundColor:[UIColor colorNamed:@"owned-sticker-background"]];
-    [self.title setTextColor:[UIColor colorNamed:@"owned-sticker-title"]];
-    [self.subtitle setTextColor:[UIColor colorNamed:@"owned-sticker-subtitle"]];
+	[self setBackgroundColor:[UIColor colorNamed:@"owned-sticker-background"]];
+	[self.title setTextColor:[UIColor colorNamed:@"owned-sticker-title"]];
+	[self.subtitle setTextColor:[UIColor colorNamed:@"owned-sticker-subtitle"]];
 }
 
 @end

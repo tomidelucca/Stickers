@@ -12,7 +12,7 @@
 #import "STStickerDAO.h"
 
 @interface STStickerStatisticViewModel : NSObject
-- (instancetype)initWithStickerDAO:(id <STStickerDAO> )dao;
+- (instancetype)initWithStickerDAO:(id <STStickerDAO>)dao;
 - (NSArray <STStickerStatistic *> *)currentStatistics;
 - (NSDecimalNumber *)totalProgress;
 @end

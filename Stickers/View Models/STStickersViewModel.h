@@ -14,7 +14,7 @@
 
 @interface STStickersViewModel : NSObject
 
-- (instancetype)initWithStickerDAO:(id <STStickerDAO> )dao;
+- (instancetype)initWithStickerDAO:(id <STStickerDAO>)dao;
 
 - (NSUInteger)numberOfSections;
 - (STStickerCellStatus)cellStatusForSticker:(STSticker *)sticker;
