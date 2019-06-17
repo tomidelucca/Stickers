@@ -2,7 +2,6 @@ platform :ios, '11.2'
 
 target 'Stickers' do
   pod 'PureLayout'
-  pod 'DKNightVersion'
 end
 
 post_install do |pi|

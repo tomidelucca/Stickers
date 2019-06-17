@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E655B12820683F2600FB2D6D /* Themes.txt in Resources */ = {isa = PBXBuildFile; fileRef = E655B12720683F2600FB2D6D /* Themes.txt */; };
 		E655B12B20684A0B00FB2D6D /* STStickerStatisticsBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B12A20684A0B00FB2D6D /* STStickerStatisticsBoxView.m */; };
 		E655B131206886DB00FB2D6D /* STStickerStatisticView.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B130206886DB00FB2D6D /* STStickerStatisticView.m */; };
 		E655B1342068890200FB2D6D /* STStickerStatistic.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B1332068890200FB2D6D /* STStickerStatistic.m */; };
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		2B8BB87D3DC1C7E2D6B9741A /* libPods-Stickers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stickers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB46962161D76AA79DA6C7D /* Pods-Stickers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stickers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stickers/Pods-Stickers.release.xcconfig"; sourceTree = "<group>"; };
-		E655B12720683F2600FB2D6D /* Themes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Themes.txt; sourceTree = "<group>"; };
 		E655B12920684A0B00FB2D6D /* STStickerStatisticsBoxView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STStickerStatisticsBoxView.h; sourceTree = "<group>"; };
 		E655B12A20684A0B00FB2D6D /* STStickerStatisticsBoxView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STStickerStatisticsBoxView.m; sourceTree = "<group>"; };
 		E655B12F206886DB00FB2D6D /* STStickerStatisticView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STStickerStatisticView.h; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				E6FFC6D92067352400B25631 /* Assets.xcassets */,
-				E655B12720683F2600FB2D6D /* Themes.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -124,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				E655B12620683F0700FB2D6D /* Resources */,
-				E6FFC6F3206737DB00B25631 /* Protocols */,
+				E6FFC6F3206737DB00B25631 /* DAO */,
 				E6FFC6EF2067360D00B25631 /* Views */,
 				E6FFC6EE2067360900B25631 /* Controllers */,
 				E6FFC6ED2067360400B25631 /* Models */,
@@ -153,8 +150,6 @@
 			children = (
 				E6FFC6E9206735E100B25631 /* STSticker.h */,
 				E6FFC6EA206735E100B25631 /* STSticker.m */,
-				E6FFC6F520673C4800B25631 /* STUserDefaultsStickerDAO.h */,
-				E6FFC6F620673C4800B25631 /* STUserDefaultsStickerDAO.m */,
 				E6FFC6FB2067454E00B25631 /* STStickersLayout.h */,
 				E6FFC6FC2067454E00B25631 /* STStickersLayout.m */,
 				E655B1322068890200FB2D6D /* STStickerStatistic.h */,
@@ -189,12 +184,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		E6FFC6F3206737DB00B25631 /* Protocols */ = {
+		E6FFC6F3206737DB00B25631 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
 				E6FFC6F4206737EB00B25631 /* STStickerDAO.h */,
+				E6FFC6F520673C4800B25631 /* STUserDefaultsStickerDAO.h */,
+				E6FFC6F620673C4800B25631 /* STUserDefaultsStickerDAO.m */,
 			);
-			path = Protocols;
+			path = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +205,6 @@
 				E6FFC6C92067352400B25631 /* Sources */,
 				E6FFC6CA2067352400B25631 /* Frameworks */,
 				E6FFC6CB2067352400B25631 /* Resources */,
-				B8412DB853E7CCE1EF319527 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,7 +253,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E655B12820683F2600FB2D6D /* Themes.txt in Resources */,
 				E6FFC6DA2067352400B25631 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,24 +276,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B8412DB853E7CCE1EF319527 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Stickers/Pods-Stickers-resources.sh",
-				"${PODS_ROOT}/DKNightVersion/DKNightVersion/ColorTable/DKColorTable.txt",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DKColorTable.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stickers/Pods-Stickers-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -10,7 +10,6 @@
 
 #import "STStickerStatisticView.h"
 
-#import <DKNightVersion/DKNightVersion.h>
 #import <PureLayout/PureLayout.h>
 
 @interface STStickerStatisticsBoxView ()

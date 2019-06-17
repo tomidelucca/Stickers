@@ -10,16 +10,10 @@
 
 #import "STMainStickersCollectionViewController.h"
 
-#import <DKNightVersion/DKNightVersion.h>
-
-static NSString *const kThemeFile = @"Themes.txt";
-
 @implementation STAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	[self setupTheme];
-
 	UIViewController *root = [STMainStickersCollectionViewController new];
 	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:root];
 	self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -27,12 +21,6 @@ static NSString *const kThemeFile = @"Themes.txt";
 	[self.window makeKeyAndVisible];
 
 	return YES;
-}
-
-- (void)setupTheme
-{
-	[[DKNightVersionManager sharedManager] setThemeVersion:DKThemeVersionNormal];
-	[[DKColorTable sharedColorTable] setFile:kThemeFile];
 }
 
 @end

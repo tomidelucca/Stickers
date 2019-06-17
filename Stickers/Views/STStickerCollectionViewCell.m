@@ -8,7 +8,6 @@
 
 #import "STStickerCollectionViewCell.h"
 
-#import <DKNightVersion/DKNightVersion.h>
 #import <PureLayout/PureLayout.h>
 
 @interface STStickerCollectionViewCell ()
@@ -29,8 +28,6 @@
 
 - (void)setupView
 {
-	[self setBackgroundColor:[UIColor lightGrayColor]];
-
 	self.title = [UILabel newAutoLayoutView];
 	self.subtitle = [UILabel newAutoLayoutView];
 

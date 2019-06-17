@@ -8,7 +8,6 @@
 
 #import "STStickerProgressView.h"
 
-#import <DKNightVersion/DKNightVersion.h>
 #import <PureLayout/PureLayout.h>
 
 @interface STStickerProgressView ()

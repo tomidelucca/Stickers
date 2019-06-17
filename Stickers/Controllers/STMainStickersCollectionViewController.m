@@ -18,7 +18,6 @@
 #import "STStickersLayout.h"
 
 #import <PureLayout/PureLayout.h>
-#import <DKNightVersion/DKNightVersion.h>
 
 @interface STMainStickersCollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource, STStickerSectionScrubberDelegate>
 @property (strong, nonatomic) STStickersViewModel *viewModel;
