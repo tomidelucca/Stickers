@@ -37,7 +37,7 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 {
 	[super viewDidLoad];
 
-	self.title = @"Russia 2018";
+    self.title = NSLocalizedString(@"RUSSIA_2018", @"Navigation Bar Title");
 
 	id <STStickerDAO> userDefaultsDAO = [STUserDefaultsStickerDAO new];
 
@@ -230,15 +230,18 @@ static NSString *const cellReuseIdentifier = @"StickerCell";
 
 	__weak __typeof__(self)weakSelf = self;
 
-	UIAlertAction *duplicated = [UIAlertAction actionWithTitle:@"Repetidas" style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
+	UIAlertAction *duplicated = [UIAlertAction actionWithTitle:NSLocalizedString(@"DUPLICATED", @"Duplicated Stickers")
+                                                         style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
 		[[UIPasteboard generalPasteboard] setString:[weakSelf.viewModel duplicatedStickers]];
 	}];
 
-	UIAlertAction *missing = [UIAlertAction actionWithTitle:@"Faltan" style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
+	UIAlertAction *missing = [UIAlertAction actionWithTitle:NSLocalizedString(@"MISSING", @"Missing Stickers")
+                                                      style:UIAlertActionStyleDefault handler: ^(UIAlertAction *action) {
 		[[UIPasteboard generalPasteboard] setString:[weakSelf.viewModel missingStickers]];
 	}];
 
-	UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancelar" style:UIAlertActionStyleCancel handler:nil];
+	UIAlertAction *cancel = [UIAlertAction actionWithTitle:NSLocalizedString(@"CANCEL", @"Share Stickers cancel action")
+                                                     style:UIAlertActionStyleCancel handler:nil];
 
 	[alert addAction:missing];
 	[alert addAction:duplicated];

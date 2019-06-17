@@ -29,9 +29,14 @@
 	NSUInteger duplicated = [self.dao numberOfDuplicatedStickers];
 	NSUInteger total = [self.dao numberOfStickers];
 
-	STStickerStatistic *uniqueStickers = [[STStickerStatistic alloc] initWithTitle:@"Únicas" value:[@(owned)stringValue]];
-	STStickerStatistic *duplicatedStickers = [[STStickerStatistic alloc] initWithTitle:@"Repetidas" value:[@(duplicated)stringValue]];
-	STStickerStatistic *missingStickers = [[STStickerStatistic alloc] initWithTitle:@"Faltan" value:[@(total - owned)stringValue]];
+	STStickerStatistic *uniqueStickers = [[STStickerStatistic alloc] initWithTitle:NSLocalizedString(@"OWNED", @"Owned Stickers")
+                                                                             value:[@(owned)stringValue]];
+    
+	STStickerStatistic *duplicatedStickers = [[STStickerStatistic alloc] initWithTitle:NSLocalizedString(@"DUPLICATED", @"Duplicated Stickers")
+                                                                                 value:[@(duplicated)stringValue]];
+    
+	STStickerStatistic *missingStickers = [[STStickerStatistic alloc] initWithTitle:NSLocalizedString(@"MISSING", @"Missing Stickers")
+                                                                              value:[@(total - owned)stringValue]];
 
 	return @[uniqueStickers, duplicatedStickers, missingStickers];
 }

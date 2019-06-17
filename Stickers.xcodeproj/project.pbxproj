@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E64219F922B750DA0097676B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E64219FB22B750DA0097676B /* Localizable.strings */; };
 		E655B12B20684A0B00FB2D6D /* STStickerStatisticsBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B12A20684A0B00FB2D6D /* STStickerStatisticsBoxView.m */; };
 		E655B131206886DB00FB2D6D /* STStickerStatisticView.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B130206886DB00FB2D6D /* STStickerStatisticView.m */; };
 		E655B1342068890200FB2D6D /* STStickerStatistic.m in Sources */ = {isa = PBXBuildFile; fileRef = E655B1332068890200FB2D6D /* STStickerStatistic.m */; };
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		2B8BB87D3DC1C7E2D6B9741A /* libPods-Stickers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stickers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB46962161D76AA79DA6C7D /* Pods-Stickers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stickers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stickers/Pods-Stickers.release.xcconfig"; sourceTree = "<group>"; };
+		E64219FA22B750DA0097676B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E64219FC22B750F90097676B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E655B12920684A0B00FB2D6D /* STStickerStatisticsBoxView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STStickerStatisticsBoxView.h; sourceTree = "<group>"; };
 		E655B12A20684A0B00FB2D6D /* STStickerStatisticsBoxView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STStickerStatisticsBoxView.m; sourceTree = "<group>"; };
 		E655B12F206886DB00FB2D6D /* STStickerStatisticView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STStickerStatisticView.h; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 		E655B12620683F0700FB2D6D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E64219FB22B750DA0097676B /* Localizable.strings */,
 				E6FFC6D92067352400B25631 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -120,12 +124,12 @@
 		E6FFC6CF2067352400B25631 /* Stickers */ = {
 			isa = PBXGroup;
 			children = (
-				E655B12620683F0700FB2D6D /* Resources */,
-				E6FFC6F3206737DB00B25631 /* DAO */,
-				E6FFC6EF2067360D00B25631 /* Views */,
-				E6FFC6EE2067360900B25631 /* Controllers */,
 				E6FFC6ED2067360400B25631 /* Models */,
+				E6FFC6EF2067360D00B25631 /* Views */,
 				E6FFC6EC206735FA00B25631 /* View Models */,
+				E6FFC6EE2067360900B25631 /* Controllers */,
+				E6FFC6F3206737DB00B25631 /* DAO */,
+				E655B12620683F0700FB2D6D /* Resources */,
 				E6FFC6D02067352400B25631 /* STAppDelegate.h */,
 				E6FFC6D12067352400B25631 /* STAppDelegate.m */,
 				E6FFC6DE2067352400B25631 /* Info.plist */,
@@ -237,6 +241,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = E6FFC6C42067352400B25631;
 			productRefGroup = E6FFC6CE2067352400B25631 /* Products */;
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6FFC6DA2067352400B25631 /* Assets.xcassets in Resources */,
+				E64219F922B750DA0097676B /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,11 +310,25 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		E64219FB22B750DA0097676B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E64219FA22B750DA0097676B /* en */,
+				E64219FC22B750F90097676B /* es */,
+			);
+			name = Localizable.strings;
+			path = /Users/Tomi/Desktop/Stickers/Stickers/Resources;
+			sourceTree = "<absolute>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		E6FFC6E12067352400B25631 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -366,6 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
